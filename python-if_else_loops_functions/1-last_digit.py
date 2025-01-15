@@ -8,7 +8,7 @@ if number < 0:
 else:
     modulus = number % 10
 
-print(f"Last digit of {number} is {modulus} ",end ="")
+print(f"Last digit of {number} is {modulus} " ,end = "")
 if modulus > 5:
     print(f"and is greater than 5")
 
