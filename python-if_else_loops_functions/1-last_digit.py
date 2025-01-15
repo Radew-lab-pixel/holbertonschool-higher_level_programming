@@ -7,6 +7,7 @@ if number < 0:
     modulus = -1 * modulus
 else:
     modulus = number % 10
+
 print(f"Last digit of {number} is {modulus} ", end ="")
 if modulus > 5:
     print(f"and is greater than 5")
