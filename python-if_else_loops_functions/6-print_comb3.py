@@ -9,8 +9,8 @@ for i in range(1, 100):
         print("0", end="")
         # pfrint("{0}".format(i), end=", ")
     if i == 89:
-        ending="\n"
+        ending = "\n"
     else:
-        ending=", "
+        ending = ", "
     if i < swap_i:
         print("{0}".format(i), end=ending)
