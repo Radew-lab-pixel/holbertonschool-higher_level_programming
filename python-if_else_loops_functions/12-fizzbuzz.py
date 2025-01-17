@@ -12,6 +12,6 @@ def fizzbuzz():
         elif modulous_3 == 0 and modulous_5 != 0:
             print("Fizz", end=" ")
         elif modulous_3 != 0 and modulous_5 == 0:
-            print("Buxx", end=" ")
+            print("Buzz", end=" ")
         else:
             print("{0}".format(i), end=" ")
