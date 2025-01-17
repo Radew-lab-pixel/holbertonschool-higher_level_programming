@@ -10,5 +10,5 @@ def uppercase(str):
             str_ord = str_ord - low_to_up
             # str[i] = chr(str_ord) cannot change string variable in Python
         print("{0}".format(chr(str_ord)), end="")
-    # fprint("\n")
+    # pfrint("\n")
     print("")
