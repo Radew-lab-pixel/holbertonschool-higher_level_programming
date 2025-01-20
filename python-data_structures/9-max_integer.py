@@ -3,7 +3,7 @@
 
 def max_integer(my_list=[]):
 
-    if (my_list == "") or (my_list ==[]):
+    if (my_list == "") or (my_list == []):
         return (None)
     else:
         length = len(my_list)
