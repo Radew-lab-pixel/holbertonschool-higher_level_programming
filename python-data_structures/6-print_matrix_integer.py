@@ -20,7 +20,7 @@ def print_matrix_integer(matrix=[[]]):
     for i in range(0, num_rows, 1):
         for j in range(0, num_cols, 1):
             if (j < num_cols - 1):
-                print("{}".format(matrix[i][j]), end = " ")
+                print("{:d}".format(matrix[i][j]), end = " ")
             else:
-                print("{}".format(matrix[i][j]), end = "")
+                print("{:d}".format(matrix[i][j]), end = "")
                 print()

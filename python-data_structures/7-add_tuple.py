@@ -18,4 +18,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
     result_list = result_list[:2]
     # printing result
     # print("Resultant tuple after addition : " + str(res))
-    return(tuple(result_list))
+    return (tuple(result_list))
