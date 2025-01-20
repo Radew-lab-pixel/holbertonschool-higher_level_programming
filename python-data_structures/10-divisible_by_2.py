@@ -7,7 +7,7 @@ def divisible_by_2(my_list=[]):
     else:
         result = []
         length = len(my_list)
-        for i in range (0, length, 1):
+        for i in range(0, length, 1):
             modolus = my_list[i] % 2
             if (modolus == 0):
                 result.append(True)
