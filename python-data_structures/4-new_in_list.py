@@ -17,9 +17,9 @@ def new_in_list(my_list, idx, element):
     temp = my_list
     length = len(temp)
 
-    if (idx < 0 or idx > length):
-        return(temp)
+    if (idx < 0 or idx >= length):
+        return (temp)
     else:
         copied_list = temp.copy()
         copied_list[idx] = element
-        return(copied_list)
+        return (copied_list)
