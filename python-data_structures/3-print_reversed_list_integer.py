@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" print_reverse_list function
+""" print_reverse_list_integer function
 
         Args:
         my_list = list argument
