@@ -11,4 +11,8 @@ def delete_at(my_list=[], idx=0):
         for i in range(0, length, 1):
             if (i != idx):
                 result.append(my_list[i])
+        my_list.clear()
+        for i in range(0, length - 1, 1):
+            my_list.append(result[i])
+        my_list = result
         return (result)
