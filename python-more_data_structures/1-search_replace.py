@@ -14,3 +14,6 @@ def search_replace(my_list, search, replace):
             if (new_list[i] == search):
                 new_list[i] = replace
         return (new_list)
+# working 
+# def search_replace(my_list, search, replace):
+#    return [[num, replace][num is search] for num in my_list]
