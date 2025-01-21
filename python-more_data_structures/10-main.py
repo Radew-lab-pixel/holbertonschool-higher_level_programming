@@ -7,3 +7,7 @@ print("Best score: {}".format(best_key))
 
 best_key = best_score(None)
 print("Best score: {}".format(best_key))
+
+my_dict = { 'John': 12, 'Alex': 8, 'Bob': 14, 'Mike': 14, 'Molly': 16 }
+best_key = best_score(my_dict)
+print("Best score: {}".format(best_key))
