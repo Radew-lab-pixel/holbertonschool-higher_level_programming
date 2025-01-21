@@ -10,5 +10,7 @@ def search_replace(my_list, search, replace):
     if (length < search):
         return (new_list)
     else:
-        new_list[search] = replace
+        for i in range(0, length, 1):
+            if (new_list[i] == search):
+                new_list[i] = replace
         return (new_list)
