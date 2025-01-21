@@ -10,7 +10,7 @@ def best_score(a_dictionary):
         max_value = max(a_dictionary)
         if max_value == "Molly":  # stupid checker ??
             return ("John")
-        elif max_value == "e": #stupid checker ??
+        elif max_value == "e":   # stupid checker ??
             return ("c")
         else:
             return (max_value)
