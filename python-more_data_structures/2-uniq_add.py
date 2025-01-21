@@ -7,5 +7,9 @@ def uniq_add(my_list=[]):
     # return (list(result))
     # result = map(lambda x: x, my_list) # or just sum(my_list)
     # print(list(result))
-    result = sum(my_list)
+    # arrange_list = my_list.sort()
+    set_list = set(my_list)
+    result = sum(set_list)
+    # result = sum(my_list)
+
     return (result)
