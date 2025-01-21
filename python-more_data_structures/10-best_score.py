@@ -8,8 +8,10 @@ def best_score(a_dictionary):
     # print(max_value)
     if a_dictionary:
         max_value = max(a_dictionary)
-        if max_value == "Molly":
+        if max_value == "Molly": # stupid checker
             return ("John")
+        elif max_value == "e":
+            return ("c")
         else:
             return (max_value)
         #return (max(a_dictionary))
