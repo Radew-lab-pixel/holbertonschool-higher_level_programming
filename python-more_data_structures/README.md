@@ -1,8 +1,7 @@
 Week 14 - More Data Structures : Set and Dictionary
-Task 0
+### Task 0
 
 #!/usr/bin/python3
-
 
 def square_matrix_simple(matrix=[]):
 
@@ -34,7 +33,6 @@ print(matrix)
 
 #!/usr/bin/python3
 
-
 def search_replace(my_list, search, replace):
 
     length = len(my_list)
@@ -59,3 +57,28 @@ new_list = search_replace(my_list, 2, 89)
 
 print(new_list)
 print(my_list)
+
+### Task 2
+
+#!/usr/bin/python3
+
+def uniq_add(my_list=[]):
+    # result = functools.reduce()
+    # result = map(lambda x : x + y for y in , my_list)
+    # return (list(result))
+    # result = map(lambda x: x, my_list) # or just sum(my_list)
+    # print(list(result))
+    # arrange_list = my_list.sort()
+    set_list = set(my_list)
+    result = sum(set_list)
+    # result = sum(my_list)
+
+    return (result)
+
+    2-main.py
+#!/usr/bin/python3
+uniq_add = __import__('2-uniq_add').uniq_add
+
+my_list = [1, 2, 3, 1, 4, 2, 5]
+result = uniq_add(my_list)
+print("Result: {:d}".format(result))
