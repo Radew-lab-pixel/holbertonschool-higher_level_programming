@@ -30,9 +30,7 @@ def roman_to_int(roman_string):
                     total_value -= roman_list_value  # subtract
                 else:
                     total_value += roman_list_value
-            else: # it's end/last dict key
+            else: # last dict key
                 total_value = total_value + roman_list_value
             # prev_list_value = roman_list.get(input_list[i])
         return (total_value)
-    else:
-        return (0)
