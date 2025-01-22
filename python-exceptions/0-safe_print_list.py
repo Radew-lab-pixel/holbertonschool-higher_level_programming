@@ -24,6 +24,6 @@ def safe_print_list(my_list=[], x=0):
             return (int(length))
             # print("Index Error")
         # except (ValueError, TypeError) as err:
-        except Exception as err:
+        except Exception as e:
             print("")
             return (0)
