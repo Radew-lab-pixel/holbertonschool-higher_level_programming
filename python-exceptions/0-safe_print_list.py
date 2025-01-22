@@ -23,6 +23,7 @@ def safe_print_list(my_list=[], x=0):
                 length += 1
             return (int(length))
             # print("Index Error")
-        except (ValueError, TypeError) as err:
+        # except (ValueError, TypeError) as err:
+        except Exception as err:
             print("")
             return (0)
