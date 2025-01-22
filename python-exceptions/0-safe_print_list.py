@@ -27,3 +27,6 @@ def safe_print_list(my_list=[], x=0):
         except Exception as e:
             print("")
             return (0)
+    else:
+        print("")
+        return (0)
