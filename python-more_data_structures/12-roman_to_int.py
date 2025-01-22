@@ -2,7 +2,7 @@
 
 
 def check_if_string(input_list, roman_list, length):
-    
+
     for i in range(0, length, 1):
         if (input_list[i] not in roman_list.keys()):
             return (0)
@@ -10,8 +10,8 @@ def check_if_string(input_list, roman_list, length):
             return (1)
 
 def roman_to_int(roman_string):
-
-    if roman_string:
+    
+    if roman_string and isinstance(roman_string, str):
         roman_list = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
         roman_list.update({'D': 500, 'M': 1000})  # check say too long
 
