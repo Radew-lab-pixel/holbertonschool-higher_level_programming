@@ -27,7 +27,10 @@ def roman_to_int(roman_string):
             if (i + 1) < length:
                 next_list_value = roman_list.get(input_list[i + 1])
                 if next_list_value > roman_list_value:  # e.g IX
-                    total_value -= roman_list_value  # subtract      
-            total_value = total_value + roman_list_value
+                    total_value -= roman_list_value  # subtract
+                else:
+                    total_value += roman_list_value
+            else: # last dict key
+                total_value = total_value + roman_list_value
             # prev_list_value = roman_list.get(input_list[i])
         return (total_value)
