@@ -13,3 +13,7 @@ print("nb_print: {:d}".format(nb_print))
 
 nb_print = safe_print_list_integers(my_list, len(my_list) + 2)
 print("nb_print: {:d}".format(nb_print))
+
+mylist = [1, 2, 3, 4]
+nb_print = safe_print_list_integers(my_list, len(mylist) + 4)
+print("nb_print: {:d}".format(nb_print))
