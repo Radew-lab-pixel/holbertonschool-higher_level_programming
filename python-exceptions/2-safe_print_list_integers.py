@@ -12,6 +12,7 @@ def safe_print_list_integers(my_list=[], x=0):
         return (count)
 
     except:
+        print()
         return
     # except IndexError:
     #    length = sum(1 for char in my_list)
