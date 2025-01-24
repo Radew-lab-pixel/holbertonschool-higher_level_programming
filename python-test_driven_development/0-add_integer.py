@@ -22,7 +22,7 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
     # if (isinstance(a, str)):
     #    raise NameError("a must be an integer")
-    #if (isinstance(b, str, list, dict)):
+    # if (isinstance(b, str, list, dict)):
     #    raise NameError("b must be an integer")
     # else:
     sum = int(a) + int(b)
