@@ -8,5 +8,5 @@
  100
  >>> add_integer(100.3, -2)
  98
- >>> add_integer(100, "A")
+ >>> add_integer(100, 'A')
  TypeError: b must be an integer
