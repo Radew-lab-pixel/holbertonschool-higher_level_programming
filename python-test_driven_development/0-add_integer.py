@@ -2,15 +2,14 @@
 """adds integer
 """
 
+
 def add_integer(a, b=98):
-    
     """
     add_integer - module to add two arguments
 
-    Args: 
+    Args:
         a : integer
         b : integer
-    
     Returns:
         sum : integer of a + b
     """
