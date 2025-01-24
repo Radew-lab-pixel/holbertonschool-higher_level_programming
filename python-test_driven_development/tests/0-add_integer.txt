@@ -14,4 +14,9 @@
  >>> add_integer("A", 2)
  Traceback (most recent call last):
  TypeError: a must be an integer
+ >>> add_integer(0.0000000000000000007, 2)
+ 2
+ >>> add_integer(float(10**1000), 2)
+ Traceback (most recent call last):
+ OverflowError: int too large to convert to float
  
