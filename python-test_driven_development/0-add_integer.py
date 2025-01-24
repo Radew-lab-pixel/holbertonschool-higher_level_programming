@@ -18,8 +18,8 @@ def add_integer(a, b=98):
         # raise Exception("a must be an integer")
         raise TypeError("a must be an integer")
     if (isinstance(b, (int, float)) == 0):
-        raise Exception("b must be an integer")
-        # raise TypeError("b must be an integer")
+        # raise Exception("b must be an integer")
+        raise TypeError("b must be an integer")
     # else:
     sum = int(a) + int(b)
     return(sum)
