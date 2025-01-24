@@ -8,7 +8,10 @@
  100
  >>> add_integer(100.3, -2)
  98
- >>> add_integer([12], 2)
- Exception raised:
-    Traceback (most recent call last):
-    TypeError: a must be an integer
+ >>> add_integer(a, 2)
+ Traceback (most recent call last):
+ NameError: name 'a' is not defined
+ >>> add_integer("A", 2)
+ Traceback (most recent call last):
+ TypeError: a must be an integer
+ 

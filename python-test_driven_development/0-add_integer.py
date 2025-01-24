@@ -20,7 +20,11 @@ def add_integer(a, b=98):
     if (isinstance(b, (int, float)) == 0):
         # raise Exception("b must be an integer")
         raise TypeError("b must be an integer")
+    # if (isinstance(a, str)):
+    #    raise NameError("a must be an integer")
+    #if (isinstance(b, str, list, dict)):
+    #    raise NameError("b must be an integer")
     # else:
-    # sum = int(a) + int(b)
-    # return(sum)
-    return (int(a) + int(b))
+    sum = int(a) + int(b)
+    return(sum)
+    # return (int(a) + int(b))
