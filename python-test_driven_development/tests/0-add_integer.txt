@@ -8,3 +8,7 @@
  100
  >>> add_integer(100.3, -2)
  98
+ >>> add_integer([12], 2)
+ Exception raised:
+    Traceback (most recent call last):
+    TypeError: a must be an integer
