@@ -10,6 +10,7 @@ def add_integer(a, b=98):
     Args:
         a : integer
         b : integer
+
     Returns:
         sum : integer of a + b
     """
