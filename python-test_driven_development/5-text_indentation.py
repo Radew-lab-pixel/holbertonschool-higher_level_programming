@@ -23,7 +23,7 @@ def text_indentation(text):
 
     ref_char = [".", "?", ":"]
 
-    for i in range(0, length,1):
+    for i in range(0, length, 1):
         print("{}".format(text_list[i]), end="")
         if text_list[i] in ref_char:
             # print()  # print two newline
