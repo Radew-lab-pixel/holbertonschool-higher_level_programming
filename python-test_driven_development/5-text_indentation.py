@@ -16,7 +16,7 @@ def text_indentation(text):
     """
     
     if not isinstance(text, str):
-        raise TypeError("Text must be a string")
+        raise TypeError("text must be a string")
 
     # text_list = list(text.stript())
     text_list = list(text)
