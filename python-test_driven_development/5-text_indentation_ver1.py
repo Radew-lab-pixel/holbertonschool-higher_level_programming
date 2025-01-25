@@ -30,11 +30,8 @@ def text_indentation(text):
             print()  # print two newline
             print()
             # print("\n\n")
-            # if (text_list[i + 1]) and (text_list[i + 1] == " "):  # next char is space
-            #    text_list[i + 1] = ""  # remove space
-               # i += 2
-            while (i + 1) < length and text[i + 1] == " ":
-                text_list[i + 1] = ""
-                i += 1
+            if (text_list[i + 1]) and (text_list[i + 1] == " "):  # next char is space
+                text_list[i + 1] = ""  # remove space
+                # i += 2
     # print()
 
