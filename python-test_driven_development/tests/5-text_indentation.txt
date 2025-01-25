@@ -5,15 +5,12 @@ Hello World
 >>> text_indentation("Hello!, World. How? everyone: today")
 Hello!, World.
 <BLANKLINE>
-<BLANKLINE>
 How?
 <BLANKLINE>
-<BLANKLINE>
 everyone:
-<BLANKLINE>
 <BLANKLINE>
 today
 
 >>> text_indentation(12345)
 Traceback (most recent call last):
-TypeError: Text must be a string
+TypeError: text must be a string
