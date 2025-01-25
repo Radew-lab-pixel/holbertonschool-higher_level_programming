@@ -27,11 +27,11 @@ def text_indentation(text):
     for i in range(0, length, 1):
         print("{}".format(text_list[i]), end="")
         if text_list[i] in ref_char:
-            # print()  # print two newline
-            # print()
-            print("\n\n")
+            print()  # print two newline
+            print()
+            # print("\n\n")
             if (text_list[i + 1]) and (text_list[i + 1] == " "):  # next char is space
                 text_list[i + 1] = ""  # remove space
-                i += 2
+                # i += 2
     # print()
 
