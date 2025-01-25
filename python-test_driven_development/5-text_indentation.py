@@ -31,4 +31,4 @@ def text_indentation(text):
             print("\n\n")
             if (text_list[i + 1] == " "):  # next char is space
                 text_list[i+1] = ""  # remove space
-
+    print()
