@@ -18,7 +18,8 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("Text must be a string")
 
-    text_list = list(text.stript())
+    # text_list = list(text.stript())
+    text_list = list(text)
     length = len(text_list)
     
     ref_char = [".", "?", ":"]
