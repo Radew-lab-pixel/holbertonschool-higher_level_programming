@@ -35,8 +35,11 @@ def matrix_mul(m_a, m_b):
     prev_cols = num_colsA
     for i in range(0, num_rowsA, 1):
         if (len(m_a[i]) != prev_cols):  # colummns diff
-            raise TypeError("each row of m_a must be of the same size")
+            raise TypeError("each row of m_a must be of the same size")   
         prev_cols = len(m_a[i])
+        for k in range(0, len(m_a[i]),1):
+            if not isinstance(m_a[i][k], (int, float)):
+                raise TypeError("m_a should contain only integers or floats")
 
     num_rowsB = len(m_b)
     num_colsB = len(m_b[0])
@@ -45,6 +48,9 @@ def matrix_mul(m_a, m_b):
         if (len(m_b[i]) != prev_cols):  # colummns diff
             raise TypeError("each row of m_b must be of the same size")
         prev_cols = len(m_b[i])
+        for k in range(0, len(m_b[i]), 1):
+            if not isinstance(m_b[i][k], (float, int)):
+                raise TypeError("m_b should contain only integers or floats")
 
     result = [[sum(a * b for a, b in zip(A_row, B_col)) 
                         for B_col in zip(*m_b)]
