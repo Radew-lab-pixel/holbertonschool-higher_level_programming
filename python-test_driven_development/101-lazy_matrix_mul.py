@@ -14,5 +14,6 @@ def lazy_matrix_mul(m_a, m_b):
         m_a * m_b
     """
 
-    result = np.multiply(m_a, m_b)
+    # result = np.multiply(m_a, m_b)
+    result = np.matmul(m_a, m_b)
     return (result)
