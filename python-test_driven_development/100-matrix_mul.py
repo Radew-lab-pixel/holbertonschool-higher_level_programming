@@ -12,9 +12,9 @@ def matrix_mul(m_a, m_b):
     Returns:
         m_a * m_b 
     """
-    if not m_a or (m_a == []):
+    if not m_a or (m_a == [[]]):
         raise ValueError("m_a can't be empty")
-    if not m_b:
+    if not m_b or (m_b == [[]]):
         raise ValueError("m_b can't be empty")
     
     if not isinstance(m_a, list):
