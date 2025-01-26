@@ -2,6 +2,16 @@
 """ 100-matrix_mul.py """
 
 def matrix_mul(m_a, m_b):
+    """
+    function to multiply two matrixs
+
+    Args:
+        m_a : first matrix
+        m_b : second matrix
+
+    Returns:
+        m_a * m_b 
+    """
     if not m_a:
         raise ValueError("m_a can't be empty")
     if not m_b:
