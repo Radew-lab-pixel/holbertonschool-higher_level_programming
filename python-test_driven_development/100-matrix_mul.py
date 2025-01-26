@@ -51,6 +51,9 @@ def matrix_mul(m_a, m_b):
         for k in range(0, len(m_b[i]), 1):
             if not isinstance(m_b[i][k], (float, int)):
                 raise TypeError("m_b should contain only integers or floats")
+            
+    if num_colsA != num_colsB:
+        raise ValueError("m_a and m_b can't be multiplied")
 
     result = [[sum(a * b for a, b in zip(A_row, B_col)) 
                         for B_col in zip(*m_b)]
