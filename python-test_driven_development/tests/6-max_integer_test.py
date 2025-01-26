@@ -19,3 +19,9 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_max_middle(self):
         self.assertEqual(max_integer([1, 2, 5, 3, 4]), 5)
+
+    def test_max_one_neg(self):
+        self.assertEqual(max_integer([1, 2, 3, -4, 5]), 5)
+    
+    def test_max_all_neg(self):
+        self.assertEqual(max_integer([-2, -6, -1, -3, -5]), -1)
