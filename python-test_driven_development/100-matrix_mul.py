@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ 100-matrix_mul.py """
 
+
 def matrix_mul(m_a, m_b):
     """
     function to multiply two matrixs
@@ -10,34 +11,34 @@ def matrix_mul(m_a, m_b):
         m_b : second matrix
 
     Returns:
-        m_a * m_b 
+        m_a * m_b
     """
     if not m_a or (m_a == [[]]):
         raise ValueError("m_a can't be empty")
     if not m_b or (m_b == [[]]):
         raise ValueError("m_b can't be empty")
-    
+
     if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
     if not isinstance(m_b, list):
         raise TypeError("m_b must be a list")
     # if not (isinstance(element, list) for element in lists for lists in m_a):
-    
+
     # if not isinstance(m_a, (int, float)):
     if not all(isinstance(ele, list) for ele in m_a):
         raise TypeError("m_a must be a list of lists")
     # if not isinstance(m_b, (int, float)):
     if not all(isinstance(ele, list) for ele in m_b):
         raise TypeError("m_b must be a list of lists")
-    
+
     num_rowsA = len(m_a)
     num_colsA = len(m_a[0])
     prev_cols = num_colsA
     for i in range(0, num_rowsA, 1):
         if (len(m_a[i]) != prev_cols):  # colummns diff
-            raise TypeError("each row of m_a must be of the same size")   
+            raise TypeError("each row of m_a must be of the same size")
         prev_cols = len(m_a[i])
-        for k in range(0, len(m_a[i]),1):
+        for k in range(0, len(m_a[i]), 1):
             if not isinstance(m_a[i][k], (int, float)):
                 raise TypeError("m_a should contain only integers or floats")
 
@@ -51,13 +52,12 @@ def matrix_mul(m_a, m_b):
         for k in range(0, len(m_b[i]), 1):
             if not isinstance(m_b[i][k], (float, int)):
                 raise TypeError("m_b should contain only integers or floats")
-            
+
     if num_colsA != num_colsB:
-        if (num_colsA != num_rowsB) or (num_colsB != num_rowsA): 
+        if (num_colsA != num_rowsB) or (num_colsB != num_rowsA):
             raise ValueError("m_a and m_b can't be multiplied")
 
-    result = [[sum(a * b for a, b in zip(A_row, B_col)) 
-                        for B_col in zip(*m_b)]
-                                for A_row in m_a]
+    result = [[sum(a * b for a, b in zip(A_row, B_col))
+               for B_col in zip(*m_b)] for A_row in m_a]
 
     return (result)
