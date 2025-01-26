@@ -25,10 +25,10 @@ def matrix_mul(m_a, m_b):
     
     # if not isinstance(m_a, (int, float)):
     if not all(isinstance(ele, list) for ele in m_a):
-        raise TypeError("m_a should contain only integers or floats")
+        raise TypeError("m_a must be a list of lists")
     # if not isinstance(m_b, (int, float)):
     if not all(isinstance(ele, list) for ele in m_b):
-        raise TypeError("m_b should contain only integers or floats")
+        raise TypeError("m_b must be a list of lists")
     
     num_rowsA = len(m_a)
     num_colsA = len(m_a[0])
