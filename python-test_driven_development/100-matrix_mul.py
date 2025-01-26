@@ -20,7 +20,7 @@ def matrix_mul(m_a, m_b):
     if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
     if not isinstance(m_b, list):
-        raise TabError("m_b must be a list")
+        raise TypeError("m_b must be a list")
     # if not (isinstance(element, list) for element in lists for lists in m_a):
     
     # if not isinstance(m_a, (int, float)):
