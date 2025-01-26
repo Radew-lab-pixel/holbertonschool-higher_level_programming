@@ -14,6 +14,8 @@ def lazy_matrix_mul(m_a, m_b):
         m_a * m_b
     """
 
+    if not (isinstance(m_a, list)) or not (isinstance(m_b, list)):
+        raise TypeError("Scalar operands are not allowed, use '*' instead")
     # result = np.multiply(m_a, m_b)
     result = np.matmul(m_a, m_b)
     return (result)
