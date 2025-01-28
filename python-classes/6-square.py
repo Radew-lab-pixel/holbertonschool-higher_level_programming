@@ -82,6 +82,7 @@ class Square:
                 print("#", end="")
             # print("")  # print(end="")
             # print("", end="\n ")
+            print(' ', end='')
             print()
             # if (i == self.__size - 1) and i != 0:
             # # added additonal due to checker
