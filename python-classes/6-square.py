@@ -44,6 +44,8 @@ class Square:
         if not isinstance(list(value)[0], int):
             # print("value[`]")
             raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(list(value)[1], int):
+            raise TypeError("position must be a tuple of 2 positive integers")
         # if not isinstance(list(value)[1], int):
         #    raise TypeError("position must be a tuple of 2 positive integers")
 
@@ -56,7 +58,7 @@ class Square:
         if (len(value) != 2): 
             # print ("lamda {}".format(value[0]))
             raise TypeError("position must be a tuple of 2 positive integers")
-        if (list(value)[1] < 0):
+        if (list(value)[1] < 0): 
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
