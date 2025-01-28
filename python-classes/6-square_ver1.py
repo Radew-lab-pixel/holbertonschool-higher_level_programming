@@ -34,16 +34,18 @@ class Square:
             self.__size = value
 
     @property       # getting method
-    # def position(self, position):
+    # def position(self, position): 
     def position(self):
         return self.__position
-
+    
     @position.setter
     def position(self, value):   # setter method
-        if not isinstance(value, tuple) and map(lambda x: x < 0, value):
+        if not isinstance(value, tuple) and map(lambda x : x < 0, value):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
+    
+
 
     def area(self):
         return (self.__size * self.__size)
@@ -51,11 +53,9 @@ class Square:
     def my_print(self):
         if self.__size == 0:
             print()
-        for i in range(0, self.__size, 1):
-            for n in range(self.__position[0]):  # add space position
-                print(" ", end="")
-            for j in range(self.__size):
-                print("#", end="")
+        # for i in range(0, self.__size, 1):
+            # for j in range(self.__size):
+            #    print("#", end="")
             # print()
-            print("\n", end="")
-        # list(map(lambda i: print("#" * self.__size), range(self.__size)))
+            # print("\n", end="")
+        list(map(lambda i: print("#" * self.__size), range(self.__size)))
