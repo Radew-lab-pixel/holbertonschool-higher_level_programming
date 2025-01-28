@@ -79,5 +79,5 @@ class Square:
             for j in range(self.__size):
                 print("#", end="")
             print()
-            print("", end="")
+            # print("", end="")
         # list(map(lambda i: print("#" * self.__size), range(self.__size)))
