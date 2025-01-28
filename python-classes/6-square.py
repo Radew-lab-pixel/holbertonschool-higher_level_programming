@@ -50,7 +50,7 @@ class Square:
         # if any(map(lambda(x: x < 0), value)):
         # if any(map(lambda x: x < 0, value)):
         if (len(value) != 2): 
-            print ("lamda {}".format(value[0]))
+            # print ("lamda {}".format(value[0]))
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
