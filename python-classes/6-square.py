@@ -75,7 +75,10 @@ class Square:
             # print("")
             print()
         # for m in range(0, self.__position[1]):
-        [print("") for i in range(0, self.__position[1])]
+        # [print("") for i in range(0, self.__position[1])]
+        for m in range(0,self.__position[1], 1):
+            print("", end="")
+
         for i in range(0, self.__size, 1):
             for n in range(self.__position[0] - 0):  # add space position
                 print(" ", end="")
