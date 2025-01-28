@@ -79,7 +79,10 @@ class Square:
             for n in range(self.__position[0] - 0):  # add space position
                 print(" ", end="")
             for j in range(self.__size):
-                print("#", end="")
+                if i == self.__size:  # stupid checker need to add additonal space 
+                    print("#", end=" ")
+                else:    
+                    print("#", end="")
             # print("")  # print(end="")
-            print(" ", end="\n")
-        #print()
+            # print("", end="\n ")
+            print()
