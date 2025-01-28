@@ -12,7 +12,15 @@ class Square:
 
     """
     def __init__(self, size=0):
+        # initilization
+        self.size = size
 
+    @property
+    def size(self):  # getter method
+        return self.__size
+
+    @size.setter
+    def size(self, size):  # setter method
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
