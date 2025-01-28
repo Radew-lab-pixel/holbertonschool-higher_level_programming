@@ -55,7 +55,7 @@ class Square:
         #    raise TypeError("position must be a tuple of 2 positive integers")
         # if any(map(lambda(x: x < 0), value)):
         # if any(map(lambda x: x < 0, value)):
-        if (len(value) != 2): 
+        if (len(value) != 2):
             # print ("lamda {}".format(value[0]))
             raise TypeError("position must be a tuple of 2 positive integers")
         if not isinstance(list(value)[1], int):
@@ -83,6 +83,6 @@ class Square:
             # print("")  # print(end="")
             # print("", end="\n ")
             print()
-            # if (i == self.__size - 1) and i != 0:  
+            # if (i == self.__size - 1) and i != 0:
             # # added additonal due to checker
             #    print(" ", end="")
