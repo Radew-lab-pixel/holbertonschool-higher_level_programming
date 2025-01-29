@@ -54,7 +54,7 @@ class Rectangle:
                 # print("#", end="")
                 result.append("#")
             # print()
-            if i != self.__height:
+            if i != (self.__height - 1):
                 result.append("\n")
         return ''.join(result)  # convert to string
         # return ''.join(map(str, result))  # still worl
