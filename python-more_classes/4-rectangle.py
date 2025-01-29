@@ -70,7 +70,7 @@ class Rectangle:
         # pass
         # return str(self.__width + self.__height)
         # return (f"{self.__width}", "{self.__height}")
-        # return f"{self.__width}, {self.__height}"
+        return f"{self.__width}, {self.__height}"
         # -- simplify below
         # rect = "Rectangle(" + str(self.__width)
         # rect += ", " + str(self.__height) + ")"
@@ -78,4 +78,4 @@ class Rectangle:
         # Instead of manually converting self.__width and self.__height
         # to strings and concatenating them, the f-string handles this
         # for you, making the code much simpler and easier to read.
-        return f"Rectangle({self.__width}, {self.__height})"
+        # return f"Rectangle({self.__width}, {self.__height})"
