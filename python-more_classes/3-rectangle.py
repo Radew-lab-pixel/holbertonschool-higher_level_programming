@@ -55,8 +55,8 @@ class Rectangle:
                 result.append("#")
             # print()
             result.append("\n")
-        # return ''.join(result)  # convert to string
-        return ''.join(map(str, result))  # still worl
+        return ''.join(result)  # convert to string
+        # return ''.join(map(str, result))  # still worl
         # return str(result)  # won't include \n
 
     # def __repr__(self):
