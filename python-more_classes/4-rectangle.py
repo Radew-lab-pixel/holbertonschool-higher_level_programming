@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""3-rectangle.py"""
+"""4-rectangle.py"""
 
 
 class Rectangle:
@@ -47,7 +47,7 @@ class Rectangle:
         else:
             return (2 * (self.__width + self.__height))
 
-    def __str__(self):
+    def __str__(self):   # return readable string
         if self.width == 0:
             return ""
         result = []
@@ -62,8 +62,20 @@ class Rectangle:
         return ''.join(map(str, result))  # still worl
         # return str(result)  # won't include \n
 
-    # def __repr__(self):
+    def __repr__(self):  # return raw string
+        # WTH WHAT ARE LOOKING FOR ??
         # return repr(self)
-    #    result = self.__width + self.__height
-    #    return result
+        # result = self.__width + self.__height
+        # return result
         # pass
+        # return str(self.__width + self.__height)
+        # return (f"{self.__width}", "{self.__height}")
+        # return f"{self.__width}, {self.__height}"
+        # -- simplify below
+        # rect = "Rectangle(" + str(self.__width)
+        # rect += ", " + str(self.__height) + ")"
+
+        # Instead of manually converting self.__width and self.__height
+        # to strings and concatenating them, the f-string handles this
+        # for you, making the code much simpler and easier to read.
+        return f"Rectangle({self.__width}, {self.__height})"
