@@ -48,6 +48,8 @@ class Rectangle:
             return (2 * (self.__width + self.__height))
 
     def __str__(self):
+        if self.width == 0:
+            return ""
         result = []
         for i in range(0, self.__height, 1):
             for j in range(0, self.__width, 1):
@@ -56,8 +58,8 @@ class Rectangle:
             # print()
             if i != (self.__height - 1):
                 result.append("\n")
-        return ''.join(result)  # convert to string
-        # return ''.join(map(str, result))  # still worl
+        # return ''.join(result)  # convert to string
+        return ''.join(map(str, result))  # still worl
         # return str(result)  # won't include \n
 
     # def __repr__(self):
