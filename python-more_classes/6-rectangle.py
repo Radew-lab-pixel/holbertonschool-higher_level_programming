@@ -5,10 +5,13 @@
 class Rectangle:
     """ Class of Rectangle object """
     # print_area(self)
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
+        # number_of_instances += 1
+        Rectangle.number_of_instances += 1
         # pass
     # print_area(self)
 
@@ -70,3 +73,4 @@ class Rectangle:
 
     def __del__(self):  # del / destroy
         print(f"Bye rectangle...")
+        Rectangle.number_of_instances -= 1
