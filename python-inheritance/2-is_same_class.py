@@ -10,8 +10,8 @@ def is_same_class(obj, a_class):
     Returns:
         True if obj match a_class datatype
     """
-    if isinstance(obj, a_class):
-        return (True)
-    else:
-        return (False)
-
+    # if isinstance(obj, a_class):
+    #    return (True)
+    # else:
+    #    return (False)
+    return isinstance(obj, a_class)
