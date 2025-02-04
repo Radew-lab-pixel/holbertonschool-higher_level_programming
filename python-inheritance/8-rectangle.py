@@ -12,8 +12,7 @@ class Rectangle(BaseGeometry):
             weight (int): The height of the rectangle.
         """
         # Rectangle.integer_validator("width", width)
-        # remove for task 10
-        # super().__init__()  # Call the superclass __init__ method
+        super().__init__()  # Call the superclass __init__ method
         self.integer_validator("width", width)
         # self.width = width
         self.__width = width  # private attribute
