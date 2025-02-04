@@ -25,8 +25,7 @@ class BaseGeometry:
         Returns:
             True if value is integer else Raise Exception
         """
-        # if not isinstance(value, int):  # not working in Task 8
-        if not (type(value) == int):  # work in Task 8
+        if not isinstance(value, int):
             raise TypeError(f"{name} must be an integer")
         elif value <= 0:
             raise ValueError(f"{name} must be greater than 0")
