@@ -28,4 +28,4 @@ class Rectangle(BaseGeometry):
         """return human-readable string representation of an object"""
         # result = []
         result = f"[Rectangle] {self.__width}/{self.__height}"
-        return(result)
+        return (result)
