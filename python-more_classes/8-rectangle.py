@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""8-rectangle.py"""
+"""8-rectangle_ver1.py"""
 
 
 class Rectangle:
