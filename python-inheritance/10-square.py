@@ -12,7 +12,8 @@ class Square(Rectangle):
         """
         # super().__init__(size, size)  # initalize the parent instance
         super().__init__(size, size)
-        self.integer_validator("size", size)
+        # self.integer_validator("size", size)
+        super().integer_validator("size", size) # for task 10 and 11
         # self.__width = size
         # self.__height = size
         # self.integer_validator("size", size)
