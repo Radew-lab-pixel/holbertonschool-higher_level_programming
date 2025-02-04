@@ -22,10 +22,10 @@ class Rectangle(BaseGeometry):
 
     def area(self):  # public method
         """public method to cal area"""
-        print(self.__width * self.__height)
+        return (self.__width * self.__height)
 
     def __str__(self):
         """return human-readable string representation of an object"""
         # result = []
         result = f"[Rectangle] {self.__width}/{self.__height}"
-        return (result)
+        return(result)
