@@ -6,7 +6,10 @@ Rectangle = __import__('9-rectangle').Rectangle
 class Square(Rectangle):
     """child Square inherited from Rectangle"""
     def __init__(self, size):
-        """"instance method"""
+        """ Initialize a Square instance.
+               Args:
+                   size (int): The width of the Square.
+        """
         super().__init__(size, size)  # initalize the parent instance
         self.integer_validator("size", size)
         # self.__width = size
