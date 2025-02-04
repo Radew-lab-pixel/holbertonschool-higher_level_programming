@@ -11,12 +11,12 @@ class Square(Rectangle):
                 size (int): The width of the Square.
         """
         # super().__init__(size, size)  # initalize the parent instance
-        super().__init__(size, size)
+
         self.integer_validator("size", size)
         # self.__width = size
         # self.__height = size
         self.__size = size
-
+        super().__init__(size, size)
 
     def area(self):
         """"public method for calculating area"""
