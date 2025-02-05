@@ -9,9 +9,14 @@ class VerboseList(list):
     def __init__(self, item):
         super().__init__(item)
 
+
     def append(self, item):
         """child method named append"""
-        super().append(item)
+        try:
+            super().append(item)
+        except TypeError:
+            print("", end="")
+
         # print(f"Added [{item}] to the list.")
         print(f"Added [{item}] to the list.")
 
