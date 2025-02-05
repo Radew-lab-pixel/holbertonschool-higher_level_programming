@@ -12,7 +12,7 @@ class VerboseList(list):
         """child method named append"""
         super().append(item)
         # print(f"Added [{item}] to the list.")
-        print(f"Added [{item}] to the list.")
+        print(f"Added {item} to the list.")
 
     def extend(self, other):
         """child method named extend"""
