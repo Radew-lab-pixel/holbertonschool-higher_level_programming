@@ -23,7 +23,7 @@ class Circle(Shape):
         """constructor of Circle subclass"""
         # self.__radius = radius
         self.pi = 3.141592653589793
-        self.radius = radius
+        self.radius = abs(radius)  # for checker
 
     def area(self):
         """method of Circle to cal area"""
