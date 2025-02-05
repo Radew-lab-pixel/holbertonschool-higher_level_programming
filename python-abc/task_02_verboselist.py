@@ -7,7 +7,10 @@ class VerboseList(list):
     # def __init__(self, iterable):
         # super().__init__(item for item in iterable)
     def __init__(self, item):
-        super().__init__(item)
+        try:
+            super().__init__(item)
+        except TypeError:
+            print("", end="")
 
 
     def append(self, item):
