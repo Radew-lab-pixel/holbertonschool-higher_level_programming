@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """class VerboseList inherits from list"""
-from sympy.codegen.ast import continue_
 
 
 class VerboseList(list):
