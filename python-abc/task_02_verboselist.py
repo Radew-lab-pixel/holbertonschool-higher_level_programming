@@ -4,8 +4,10 @@
 
 class VerboseList(list):
     """VerboseList class inherit from list"""
-    def __init__(self, iterable):
-        super().__init__((item) for item in iterable)
+    # def __init__(self, iterable):
+        # super().__init__(item for item in iterable)
+    def __init__(self, item):
+        super().__init__(item)
 
     def append(self, item):
         """child method named append"""
@@ -15,10 +17,11 @@ class VerboseList(list):
 
     def extend(self, other):
         """child method named extend"""
-        if isinstance(other, type(self)):
-            super().extend(other)
-        else:
-            super().extend(item for item in other)
+        # if isinstance(other, type(self)):
+        #    super().extend(other)
+        # else:
+        #    super().extend(item for item in other)
+        super().extend(other)
         print(f"Extended the list with [{len(other)}] items.")
 
     def remove(self, item):
