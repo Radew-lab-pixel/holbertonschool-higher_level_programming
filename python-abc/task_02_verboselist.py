@@ -5,8 +5,8 @@ from sympy.codegen.ast import continue_
 
 class VerboseList(list):
     """VerboseList class inherit from list"""
-    # def __init__(self, iterable):
-    #    super().__init__((item) for item in iterable)
+    def __init__(self, iterable):
+        super().__init__((item) for item in iterable)
 
     def append(self, item):
         """child method named append"""
