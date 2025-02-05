@@ -27,11 +27,13 @@ class Circle(Shape):
 
     def area(self):
         """method of Circle to cal area"""
-        print(f"Area: {self.radius * self.radius * self.pi}")
+        # print(f"Area: {self.radius * self.radius * self.pi}")
+        return self.radius * self.radius * self.pi
 
     def perimeter(self):
         """method of Circle to cal perimeter"""
-        print(f"Perimeter: {2 * self.radius * self.pi}")
+        # print(f"Perimeter: {2 * self.radius * self.pi}")
+        return 2 * self.radius * self.pi
 
 
 class Rectangle(Shape):
@@ -45,11 +47,13 @@ class Rectangle(Shape):
 
     def area(self):
         """method of Rectangle to cal area"""
-        print(f"Area: {self.width * self.height}")
+        # print(f"Area: {self.width * self.height}")
+        return self.width * self.height
 
     def perimeter(self):
         """method of Rectangle to cal perimeter"""
-        print(f"Perimeter: {2 * (self.width + self.height)}")
+        # print(f"Perimeter: {2 * (self.width + self.height)}")
+        return 2 * (self.width + self.height)
 
 # Attributes having same name are
 # considered as duck typing
@@ -60,5 +64,5 @@ class Rectangle(Shape):
 
 def shape_info(obj):
     """public function shape_info duck typing"""
-    obj.area()
-    obj.perimeter()
+    print(f"Area: {obj.area()}")
+    print(f"Perimeter: {obj.perimeter()}")
