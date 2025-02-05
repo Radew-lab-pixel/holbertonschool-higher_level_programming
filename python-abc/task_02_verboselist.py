@@ -5,8 +5,8 @@ from sympy.codegen.ast import continue_
 
 class VerboseList(list):
     """VerboseList class inherit from list"""
-    def __init__(self, iterable):
-        super().__init__((item) for item in iterable)
+    # def __init__(self, iterable):
+    #    super().__init__((item) for item in iterable)
 
     def append(self, item):
         """child method named append"""
@@ -20,20 +20,20 @@ class VerboseList(list):
             super().extend(other)
         else:
             super().extend(item for item in other)
-        print(f"Extended the list with {len(other)} items.")
+        print(f"Extended the list with [{len(other)}] items.")
 
     def remove(self, item):
         """child method named remove"""
-        print(f"Removed {item} from the list.")
+        print(f"Removed [{item}] from the list.")
         try:
             super().remove(item)
         except ValueError:
             print("", end="")
 
 
-    def pop(self):
-        print(f"Popped [item] from the list.")
-        super().pop()
+    # def pop(self):
+    #    print(f"Popped [item] from the list.")
+    #    super().pop()
 
     # def pop(self, item):
         # """child method named pop"""
