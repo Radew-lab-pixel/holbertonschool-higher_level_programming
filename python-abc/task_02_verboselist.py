@@ -29,6 +29,7 @@ class VerboseList(list):
         except ValueError:
             print("", end="")
 
+
     def pop(self):
         print(f"Popped [item] from the list.")
         super().pop()
