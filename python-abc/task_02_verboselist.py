@@ -11,7 +11,8 @@ class VerboseList(list):
     def append(self, item):
         """child method named append"""
         super().append(item)
-        print(f"Added [{item}] to the list.")
+        # print(f"Added [{item}] to the list.")
+        print(f"Added {item} to the list.")
 
     def extend(self, other):
         """child method named extend"""
@@ -23,7 +24,7 @@ class VerboseList(list):
 
     def remove(self, item):
         """child method named remove"""
-        print(f"Removed [{item}] from the list.")
+        print(f"Removed {item} from the list.")
         try:
             super().remove(item)
         except ValueError:
@@ -42,5 +43,5 @@ class VerboseList(list):
     def pop(self, index=-1):
         """child method named pop"""
         result = super().pop(index)
-        print(f"Popped [{result}] from the list.")
+        print(f"Popped {result} from the list.")
         return result
