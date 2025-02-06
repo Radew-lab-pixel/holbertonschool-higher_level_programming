@@ -25,12 +25,12 @@ class FlyingFish(Fish, Bird):
     """child class FlyingFish"""
     def swim(self):
         """method swim"""
-        print(f"The flying fish is swimming")
+        print("The flying fish is swimming!")
 
     def habitat(self):
         """method habitat"""
-        print(f"The flying fish lives both in water and the sky")
+        print(f"The flying fish lives both in water and the sky!")
 
     def fly(self):
         """method fly"""
-        print(f"The flying fish is soaring")
+        print(f"The flying fish is soaring!")
