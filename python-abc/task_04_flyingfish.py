@@ -33,4 +33,4 @@ class FlyingFish(Fish, Bird):
 
     def fly(self):
         """method fly"""
-        print(f"The flying fish is flying")
+        print(f"The flying fish is soaring")
