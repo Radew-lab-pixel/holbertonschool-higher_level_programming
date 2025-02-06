@@ -21,5 +21,12 @@ class CountedIterator:
     def __next__(self):
         """method next that return next item of an iterator.
         __next__ as it built inn method """
-        self.counter += 1
-        return (next(self.iterator))
+        try:
+            result = next(self.iterator)
+            self.counter += 1
+            return result
+        except StopIteration:
+            # print("No more items.")
+            raise StopIteration("No more items. ")
+        # return (next(self.iterator))
+        # return result
