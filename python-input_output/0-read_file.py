@@ -11,5 +11,5 @@ def read_file(filename=""):
 
     with open(filename, 'r') as file:
         a_string = file.read()
-        print(a_string)
+        print(a_string, end="")
         # file.close() is not required if using with
