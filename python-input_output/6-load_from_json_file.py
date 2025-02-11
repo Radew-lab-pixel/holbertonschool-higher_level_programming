@@ -4,6 +4,7 @@ import json
 
 
 def load_from_json_file(filename):
+    """method that creates an object from JSON file"""
     with open(filename, 'r') as file:
         text_json = file.read()
         # x = json.loads(text_json, object_hook=load_from_json_file)
