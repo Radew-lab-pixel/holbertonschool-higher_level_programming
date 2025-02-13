@@ -513,3 +513,44 @@ print("{} {} {}".format(new_student_1.first_name, new_student_1.last_name, new_s
 
 ## Task 12 : Create a function def pascal_triangle(n): that returns a list of lists of integers representing the Pascal’s triangle of n:
 
+12-pascal_triangle.py
+
+#!/usr/bin/python3
+""" that returns a list of lists of integers representing
+the Pascal’s triangle of n:"""
+
+def pascal_triangle(n):
+    """
+    method for Pascal's Triangle using the nCr (Combination) method.
+    """
+    if n <= 0:
+        return []
+
+    triangle = []
+    for i in range(n):
+        row = [1]  # First element is always 1
+        for j in range(1, i + 1):
+            # Calculate C(i, j) using the previous value in the row
+            element = row[j - 1] * (i - j + 1) // j
+            row.append(element)
+        triangle.append(row)
+    return triangle
+
+12-main.py
+#!/usr/bin/python3
+"""
+12-main
+"""
+pascal_triangle = __import__("12-pascal_triangle").pascal_triangle
+
+
+def print_triangle(triangle):
+    """
+    Print the triangle
+    """
+    for row in triangle:
+        print("[{}]".format(",".join([str(x) for x in row])))
+
+if __name__ == "__main__":
+    print_triangle(pascal_triangle(5))
+

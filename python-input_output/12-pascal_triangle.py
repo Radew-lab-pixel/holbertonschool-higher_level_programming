@@ -5,7 +5,7 @@ the Pascal’s triangle of n:"""
 
 def pascal_triangle(n):
     """
-    Generate Pascal's Triangle using the nCr (Combination) method.
+    method for Pascal's Triangle using the nCr (Combination) method.
     """
     if n <= 0:
         return []
