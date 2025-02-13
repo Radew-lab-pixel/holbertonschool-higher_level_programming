@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ed50ad9b-9c13-4373-b857-2d0c3abbcb6c" name="Changes" comment="append 0-read_file.py use with instead" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://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@github.com/Radew-lab-pixel/holbertonschool-higher_level_programming.git&quot;,
+    &quot;accountId&quot;: &quot;80565ce5-977c-4e81-bc24-47ec18c5849f&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2sU3DnWztMBwh9dOCoBLC0Ymk18" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.0-main.executor": "Run",
+    "Python.1-main.executor": "Run",
+    "Python.1-my_list.executor": "Run",
+    "Python.10-main.executor": "Run",
+    "Python.11-main.executor": "Run",
+    "Python.12-main.executor": "Run",
+    "Python.2-main.executor": "Run",
+    "Python.3-main.executor": "Run",
+    "Python.3-print_number.executor": "Run",
+    "Python.4-main.executor": "Run",
+    "Python.5-main.executor": "Run",
+    "Python.6-main.executor": "Run",
+    "Python.7-main.executor": "Run",
+    "Python.8-concat_edges.executor": "Run",
+    "Python.8-main.executor": "Run",
+    "Python.9-main.executor": "Run",
+    "Python.main_00_abc.executor": "Run",
+    "Python.main_01_duck_typing.py .executor": "Run",
+    "Python.main_02_verboselist.executor": "Run",
+    "Python.main_03_countediterator.py .executor": "Run",
+    "Python.main_04_flyingfish.py .executor": "Run",
+    "Python.main_05_dragon.executor": "Run",
+    "Python.task_00_abc.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/media/oem/26FEA6A5FEA66D2D/Courses/Holberton/Week 16 - Python - Inheritance",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.12-main">
+    <configuration name="10-main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="holbertonschool-higher_level_programming" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-input_output" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-input_output/10-main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="11-main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="holbertonschool-higher_level_programming" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-input_output" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-input_output/11-main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="12-main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="holbertonschool-higher_level_programming" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-input_output" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-input_output/12-main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="8-main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="holbertonschool-higher_level_programming" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-input_output" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-input_output/8-main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="9-main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="holbertonschool-higher_level_programming" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-input_output" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-input_output/9-main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.12-main" />
+        <item itemvalue="Python.11-main" />
+        <item itemvalue="Python.10-main" />
+        <item itemvalue="Python.9-main" />
+        <item itemvalue="Python.8-main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-a5bc9544c897-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.23654.177" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed50ad9b-9c13-4373-b857-2d0c3abbcb6c" name="Changes" comment="" />
+      <created>1738496216038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738496216038</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add 1-my_list.py">
+      <option name="closed" value="true" />
+      <created>1738563576067</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738563576068</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add 1-my_list.py">
+      <option name="closed" value="true" />
+      <created>1738563890908</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738563890908</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add 1-my_list.py">
+      <option name="closed" value="true" />
+      <created>1738563979026</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738563979026</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add 1-my_list.py">
+      <option name="closed" value="true" />
+      <created>1738564089039</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738564089039</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Amend 1-my_list.txt">
+      <option name="closed" value="true" />
+      <created>1738589464964</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738589464964</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Amend 1-my_list.txt">
+      <option name="closed" value="true" />
+      <created>1738589687150</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738589687151</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Amend 1-my_list.txt">
+      <option name="closed" value="true" />
+      <created>1738589957145</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738589957145</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Amend 1-my_list.txt">
+      <option name="closed" value="true" />
+      <created>1738590087013</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738590087013</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add 2-is_same_class.py">
+      <option name="closed" value="true" />
+      <created>1738591013410</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738591013410</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Amend 2-is_same_class.py">
+      <option name="closed" value="true" />
+      <created>1738591418518</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1738591418518</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Amend 2-is_same_class.py">
+      <option name="closed" value="true" />
+      <created>1738591730298</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1738591730298</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add 3-is_kind_of_class.py">
+      <option name="closed" value="true" />
+      <created>1738594141768</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1738594141769</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Amend 3-is_kind_of_class.py">
+      <option name="closed" value="true" />
+      <created>1738594203545</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1738594203545</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add 4-inherits_from.py">
+      <option name="closed" value="true" />
+      <created>1738594886857</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1738594886858</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Amend 4-inherits_from.py&#10;include not type(obj) == a_class">
+      <option name="closed" value="true" />
+      <created>1738625019399</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1738625019399</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Amend 4-inherits_from.py&#10;use is instead of == due to pycodestyle">
+      <option name="closed" value="true" />
+      <created>1738625215765</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1738625215765</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add 5-base_geometry.py">
+      <option name="closed" value="true" />
+      <created>1738625851245</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1738625851245</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add 6-base_geometry.py">
+      <option name="closed" value="true" />
+      <created>1738626932802</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1738626932802</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Amend 6-base_geometry.py">
+      <option name="closed" value="true" />
+      <created>1738627124024</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1738627124024</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Amend 8-rectangle.py">
+      <option name="closed" value="true" />
+      <created>1738639188019</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1738639188019</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Amend 8-rectangle.py">
+      <option name="closed" value="true" />
+      <created>1738639543443</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1738639543444</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Amend 8-rectangle.py">
+      <option name="closed" value="true" />
+      <created>1738642051003</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1738642051004</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Amend 8-rectangle.py">
+      <option name="closed" value="true" />
+      <created>1738642691557</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1738642691558</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Amend 8-rectangle.py">
+      <option name="closed" value="true" />
+      <created>1738643655244</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1738643655246</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Amend 9-rectangle.py">
+      <option name="closed" value="true" />
+      <created>1738645330244</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1738645330245</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Amend 9-rectangle.py">
+      <option name="closed" value="true" />
+      <created>1738646096519</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1738646096520</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Amend 10-square.py">
+      <option name="closed" value="true" />
+      <created>1738648988689</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1738648988690</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Amend 10-square.py">
+      <option name="closed" value="true" />
+      <created>1738649198848</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1738649198848</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Amend 10-square.py">
+      <option name="closed" value="true" />
+      <created>1738649352174</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1738649352174</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Amend 10-square.py">
+      <option name="closed" value="true" />
+      <created>1738649462000</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1738649462000</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Amend 10-square.py">
+      <option name="closed" value="true" />
+      <created>1738667001682</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1738667001682</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Amend 8-rectangle.py &#10;remove super().__init__()  for task 10)">
+      <option name="closed" value="true" />
+      <created>1738667241661</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1738667241661</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Amend 10-square.py">
+      <option name="closed" value="true" />
+      <created>1738667592697</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1738667592698</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Amend 10-square.py">
+      <option name="closed" value="true" />
+      <created>1738668119683</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1738668119683</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Amend 7-base_geometry.py for task 10 &#10;if type(value) is not int">
+      <option name="closed" value="true" />
+      <created>1738668365878</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1738668365878</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Add &quot;task_00_abc.py&quot; and &quot;main_00_abc.py&quot;">
+      <option name="closed" value="true" />
+      <created>1738725637044</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1738725637044</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Add &quot;task_01_duck_typing.py&quot; and &quot;main_01_duck_typing.py&quot;">
+      <option name="closed" value="true" />
+      <created>1738728874143</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1738728874143</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Amend &quot;task_01_duck_typing.py&quot;">
+      <option name="closed" value="true" />
+      <created>1738729967383</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1738729967384</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Amend &quot;task_01_duck_typing.py&quot; add abs(radius)">
+      <option name="closed" value="true" />
+      <created>1738730072834</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1738730072834</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Amend &quot;task_02_verboselist.py&quot;">
+      <option name="closed" value="true" />
+      <created>1738736394480</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1738736394481</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Amend &quot;task_02_verboselist.py&quot;">
+      <option name="closed" value="true" />
+      <created>1738754677101</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1738754677102</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Amend &quot;task_02_verboselist.py&quot; &#10;remove from sympy.codegen.ast import continue_">
+      <option name="closed" value="true" />
+      <created>1738754729838</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1738754729838</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Amend &quot;task_02_verboselist.py&quot; &#10;remove from sympy.codegen.ast import continue_&#10;amend spelling">
+      <option name="closed" value="true" />
+      <created>1738754806341</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1738754806341</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Amend &quot;task_02_verboselist.py&quot; &#10;remove from sympy.codegen.ast import continue_&#10;amend spelling">
+      <option name="closed" value="true" />
+      <created>1738755271451</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1738755271452</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Amend &quot;task_02_verboselist.py&quot;">
+      <option name="closed" value="true" />
+      <created>1738755295741</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1738755295742</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Amend &quot;task_02_verboselist.py&quot;&#10;add try except TypeError in append method">
+      <option name="closed" value="true" />
+      <created>1738755554239</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1738755554239</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Amend &quot;task_02_verboselist.py&quot;&#10;add try except TypeError in append method">
+      <option name="closed" value="true" />
+      <created>1739190935480</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1739190935482</updated>
+    </task>
+    <task id="LOCAL-00054" summary="append 0-read_file.py use with instead">
+      <option name="closed" value="true" />
+      <created>1739191379224</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1739191379226</updated>
+    </task>
+    <task id="LOCAL-00055" summary="append 0-read_file.py use with instead">
+      <option name="closed" value="true" />
+      <created>1739191455064</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1739191455064</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Amend 1-my_list.txt" />
+    <MESSAGE value="Add 2-is_same_class.py" />
+    <MESSAGE value="Amend 2-is_same_class.py" />
+    <MESSAGE value="Add 3-is_kind_of_class.py" />
+    <MESSAGE value="Amend 3-is_kind_of_class.py" />
+    <MESSAGE value="Add 4-inherits_from.py" />
+    <MESSAGE value="Amend 4-inherits_from.py&#10;include not type(obj) == a_class" />
+    <MESSAGE value="Amend 4-inherits_from.py&#10;use is instead of == due to pycodestyle" />
+    <MESSAGE value="Add 5-base_geometry.py" />
+    <MESSAGE value="Add 6-base_geometry.py" />
+    <MESSAGE value="Amend 6-base_geometry.py" />
+    <MESSAGE value="Amend 8-rectangle.py" />
+    <MESSAGE value="Amend 9-rectangle.py" />
+    <MESSAGE value="Amend 8-rectangle.py &#10;remove super().__init__()  for task 10)" />
+    <MESSAGE value="Amend 10-square.py" />
+    <MESSAGE value="Amend 7-base_geometry.py for task 10 &#10;if type(value) is not int" />
+    <MESSAGE value="Add &quot;task_00_abc.py&quot; and &quot;main_00_abc.py&quot;" />
+    <MESSAGE value="Add &quot;task_01_duck_typing.py&quot; and &quot;main_01_duck_typing.py&quot;" />
+    <MESSAGE value="Amend &quot;task_01_duck_typing.py&quot;" />
+    <MESSAGE value="Amend &quot;task_01_duck_typing.py&quot; add abs(radius)" />
+    <MESSAGE value="Amend &quot;task_02_verboselist.py&quot; &#10;remove from sympy.codegen.ast import continue_" />
+    <MESSAGE value="Amend &quot;task_02_verboselist.py&quot; &#10;remove from sympy.codegen.ast import continue_&#10;amend spelling" />
+    <MESSAGE value="Amend &quot;task_02_verboselist.py&quot;" />
+    <MESSAGE value="Amend &quot;task_02_verboselist.py&quot;&#10;add try except TypeError in append method" />
+    <MESSAGE value="append 0-read_file.py use with instead" />
+    <option name="LAST_COMMIT_MESSAGE" value="append 0-read_file.py use with instead" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/python-inheritance/8-main.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
