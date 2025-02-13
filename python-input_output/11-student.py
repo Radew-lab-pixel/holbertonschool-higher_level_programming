@@ -38,4 +38,4 @@ class Student:
         for key, value in json.items():
             # self.__dict__.key = value
             setattr(self, key, value)
-            # setattrsets the value of the attribute of an object.
+            # setattr - sets the value of the attribute of an object.

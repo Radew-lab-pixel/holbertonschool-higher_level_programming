@@ -24,7 +24,7 @@ class Student:
             return self.__dict__
         # if self.__dict__.items()
             # Create an empty dictionary to store the filtered attributes
-        filtered_dict = {}
+        filtered_dict = {}  # dict {}
 
         # Loop through all the attributes of the instance
         for key, value in self.__dict__.items():
