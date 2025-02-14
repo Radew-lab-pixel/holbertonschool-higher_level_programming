@@ -29,9 +29,12 @@ class CustomObject:
           nd save it to the provided filename."""
         # text = f"{self.name} {self.age} {self.is_student}"
         # print(text)
-        with open(filename, 'wb') as file:
-            # pickle.dump(text, file)
-            pickle.dump(self, file)
+        try:
+            with open(filename, 'wb') as file:
+                # pickle.dump(text, file)
+                pickle.dump(self, file)
+        except Exception as err:
+            print("")
 
     @classmethod
     def deserialize(cls, filename):
@@ -39,6 +42,9 @@ class CustomObject:
         return an instance of the CustomObject from the
         provided filename.
         """
-        with open(filename, 'rb') as file:
-            data_loaded = pickle.load(file)
-        return data_loaded
+        try:
+            with open(filename, 'rb') as file:
+                data_loaded = pickle.load(file)
+            return data_loaded
+        except Exception as err:
+            return None
