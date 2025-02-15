@@ -29,6 +29,7 @@ def convert_csv_to_json(filename_csv):
                 data_list.append(rows)  # Append entire row to the list
     except Exception as err:
         print("")
+        return False
 
     # open a json file handler and use json dumps
     # to convert dict to json string
