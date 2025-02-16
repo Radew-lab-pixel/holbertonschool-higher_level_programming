@@ -12,7 +12,7 @@ def convert_csv_to_json(filename_csv):
     and writes the JSON data to data.json."""
     # step 1
     # data_dict = {}  # create empty dict attribute
-    data_list = [] # create a list
+    data_list = [] # create a list to avoid the adding 1st key('name') to data_dict
 
     # step 2 open csv file handler
     try:
@@ -35,7 +35,7 @@ def convert_csv_to_json(filename_csv):
     # to convert dict to json string
     filename_json = "data.json"
     try:
-        with open(filename_json, 'w', encoding ='utf-8') as file_json:
+        with open(filename_json, 'w', encoding='utf-8') as file_json:
             # step 3 : json dumps to convert dict to json string
             # file_json.write(json.dumps(data_dict, indent=4))
             file_json.write(json.dumps(data_list, indent=4))
