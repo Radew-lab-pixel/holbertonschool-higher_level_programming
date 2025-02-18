@@ -15,7 +15,7 @@ def pascal_triangle(n):
         row = [1]  # First element is always 1
         for j in range(1, i + 1):
             # Calculate C(i, j) using the previous value in the row
-            element = row[j - 1] * (i - j + 1) // j
+            element = row[j - 1] * (i - j + 1) / j
             row.append(element)
         triangle.append(row)
     return triangle
