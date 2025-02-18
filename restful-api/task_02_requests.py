@@ -40,7 +40,7 @@ def fetch_and_save_posts():
     response = requests.get(url, timeout=3)
     # response = requests.head(url)
     # print(response)
-    # print(f"Status Code: {response.status_code}") for debugging
+    print(f"Status Code: {response.status_code}") for debugging
     # result_dict = {}
     result_list = []
     while response:
