@@ -54,13 +54,18 @@ def fetch_and_save_posts():
             # print(API_data['title'])  # for debugging
             
             # my_dict = {'id': API_data['id'], 'title': API_data['title'], 'body': API_data['body']}
-            my_dict = {'id':API_data['id'], 'title':API_data['title'], 'body':API_data['body']}
+            # my_dict = {'id':API_data['id'], 'title':API_data['title'], 'body':API_data['body']}
             # student_details = json.loads(jsonString)
             # my_dict = json.loads(API_data)
-            
+            my_dict = {
+                        'id': API_data.get('id', None),  # Fallback to `None` if missing
+                        'title': API_data.get('title', ''),
+                        'body': API_data.get('body', '')
+                        }
+
             # result_dict.append({my_dict})
             # result_dict.update({my_dict})
-            
+
             result_list.append(my_dict)
             # print(my_dict)  # for debugging  
         else:
