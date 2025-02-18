@@ -12,7 +12,7 @@ def fetch_and_print_posts():
     count = 1  # API valid ID (1- 100)
     url = f"https://jsonplaceholder.typicode.com/posts/{count}"
     
-    response = requests.get(url)
+    response = requests.get(url, timeout=3)
     # response = requests.head(url)
     # print(response)
     print(f"Status Code: {response.status_code}")
@@ -28,7 +28,7 @@ def fetch_and_print_posts():
             raise Exception(f"{response.status_code}")
         count += 1
         url = f"https://jsonplaceholder.typicode.com/posts/{count}"
-        response = requests.get(url)
+        response = requests.get(url, timeout=3)
 
 def fetch_and_save_posts():
 
