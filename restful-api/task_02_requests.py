@@ -60,8 +60,9 @@ def fetch_and_save_posts():
             
             # result_dict.append({my_dict})
             # result_dict.update({my_dict})
+            
             result_list.append(my_dict)
-            print(my_dict)  # for debugging  
+            # print(my_dict)  # for debugging  
         else:
             raise Exception(f"{response.status_code}")
         count += 1
