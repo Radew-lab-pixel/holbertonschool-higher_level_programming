@@ -2,9 +2,7 @@
 """Consuming and processing data from an API using Python 
 """
 import requests
-import csv
 
-file_name = "posts.csv"
 
 def fetch_and_print_posts():
     """method to fetch and print posts from jsonplaceholder""" 
@@ -61,9 +59,6 @@ def fetch_and_save_posts():
         url = f"https://jsonplaceholder.typicode.com/posts/{count}"
         response = requests.get(url, timeout=3)
     # print(result_dict)  # for debugging
-    # print(result_list)  # for debugging
-    with open(file_name, 'w') as file:
-        writer = csv.DictWriter(file, fieldnames=['id', 'title', 'body'])
-        writer.writeheader()
-        writer.writerows(result_list)
+    print(result_list)  # for debugging
     # pass
+    
