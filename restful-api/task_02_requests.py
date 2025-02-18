@@ -15,7 +15,7 @@ def fetch_and_print_posts():
     response = requests.get(url)
     # response = requests.head(url)
     # print(response)
-    print(f"Status Code : {response.status_code}")
+    print(f"Status Code: {response.status_code}")
 
     while response:
         if response:
