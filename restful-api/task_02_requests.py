@@ -38,7 +38,8 @@ def fetch_and_save_posts():
     """ method to fetch and save posts from jsonplaceholder"""
     count = 1  # API valid ID (1- 100)
     url = f"https://jsonplaceholder.typicode.com/posts/{count}"
-    
+    quote ='"'
+
     # response = requests.get(url, timeout=3)
     response = requests.get(url, timeout=10)
     # response = requests.head(url)
@@ -78,7 +79,8 @@ def fetch_and_save_posts():
     # print(result_dict)  # for debugging
     # print(result_list)  # for debugging
     with open(file_name, 'w') as file:
-        writer = csv.DictWriter(file, fieldnames=['id', 'title', 'body'])
+        writer = csv.DictWriter(file, fieldnames=['id', 'title', 'body'], quotechar=quote,
+            quoting=csv.QUOTE_NONNUMERIC)
         writer.writeheader()
         writer.writerows(result_list)
         # writer.writerow(result_list)
