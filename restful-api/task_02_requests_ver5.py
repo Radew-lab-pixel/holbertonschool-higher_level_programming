@@ -38,8 +38,11 @@ def fetch_and_save_posts():
     """ method to fetch and save posts from jsonplaceholder"""
     count = 1  # API valid ID (1- 100)
     url = f"https://jsonplaceholder.typicode.com/posts/{count}"
-    
-    response = requests.get(url, timeout=3)
+    quote ='"'
+
+    print("Please wait\n")
+    # response = requests.get(url, timeout=3)
+    response = requests.get(url, timeout=10)
     # response = requests.head(url)
     # print(response)
     # print(f"Status Code: {response.status_code}") for debugging
@@ -58,13 +61,14 @@ def fetch_and_save_posts():
             # student_details = json.loads(jsonString)
             # my_dict = json.loads(API_data)
             my_dict = {
-                        'id': API_data.get('id', None),  # Fallback to `None` if missing
-                        'title': API_data.get('title', ''),
-                        'body': API_data.get('body', '')
+                        "id": API_data.get('id', None),  # Fallback to `None` if missing
+                        "title": API_data.get('title', " "),
+                        "body": API_data.get('body', " ")
                         }
 
             # result_dict.append({my_dict})
             # result_dict.update({my_dict})
+
 
             result_list.append(my_dict)
             # print(my_dict)  # for debugging  
@@ -72,14 +76,18 @@ def fetch_and_save_posts():
             raise Exception(f"{response.status_code}")
         count += 1
         url = f"https://jsonplaceholder.typicode.com/posts/{count}"
-        response = requests.get(url, timeout=3)
+        # response = requests.get(url, timeout=3)
+        response = requests.get(url, timeout=10)
     # print(result_dict)  # for debugging
     # print(result_list)  # for debugging
-    with open(file_name, 'w') as file:
-        writer = csv.DictWriter(file, fieldnames=['id', 'title', 'body'])
+    with open(file_name, 'w', newline="") as file:
+        # writer = csv.DictWriter(file, fieldnames=['id', 'title', 'body'], quotechar='"',
+        #    quoting=csv.QUOTE_NONNUMERIC)
+        writer = csv.DictWriter(file, fieldnames=['id', 'title', 'body'], quotechar='"',
+            quoting=csv.QUOTE_NONNUMERIC)
+        
         writer.writeheader()
-        # writer.writerows(result_list)
-        for row in my_dict:
-            row_data = {"id": row['id'], "title": row['title'], "body": row['body'].str.replace("\n", "")}
+        writer.writerows(result_list)
         # writer.writerow(result_list)
+        
     # pass

@@ -79,7 +79,13 @@ def fetch_and_save_posts():
         writer = csv.DictWriter(file, fieldnames=['id', 'title', 'body'])
         writer.writeheader()
         # writer.writerows(result_list)
-        for row in my_dict:
-            row_data = {"id": row['id'], "title": row['title'], "body": row['body'].str.replace("\n", "")}
+        # for row in my_dict:
+        #    row_data = "{"id": row['id'], "title": row['title'], "body": row['body'].replace("\n", "")}"
         # writer.writerow(result_list)
+        for post in API_data:
+                writer.writerow({
+                    'id': post[id],
+                    'title': post['title'],
+                    'body': post['body'].replace("\n", "")
+                })
     # pass
