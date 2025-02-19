@@ -39,8 +39,7 @@ def fetch_and_save_posts():
     count = 1  # API valid ID (1- 100)
     url = f"https://jsonplaceholder.typicode.com/posts/{count}"
     
-    # response = requests.get(url, timeout=3)
-    response = requests.get(url)
+    response = requests.get(url, timeout=3)
     # response = requests.head(url)
     # print(response)
     # print(f"Status Code: {response.status_code}") for debugging
@@ -60,8 +59,8 @@ def fetch_and_save_posts():
             # my_dict = json.loads(API_data)
             my_dict = {
                         'id': API_data.get('id', None),  # Fallback to `None` if missing
-                        'title': API_data.get('title', " "),
-                        'body': API_data.get('body', " ")
+                        'title': API_data.get('title', ''),
+                        'body': API_data.get('body', '')
                         }
 
             # result_dict.append({my_dict})
@@ -73,8 +72,7 @@ def fetch_and_save_posts():
             raise Exception(f"{response.status_code}")
         count += 1
         url = f"https://jsonplaceholder.typicode.com/posts/{count}"
-        # response = requests.get(url, timeout=3)
-        response = requests.get(url)
+        response = requests.get(url, timeout=3)
     # print(result_dict)  # for debugging
     # print(result_list)  # for debugging
     with open(file_name, 'w') as file:
