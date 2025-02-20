@@ -87,8 +87,8 @@ class simpleHTTPServer(BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header("Content-type", "text/plain; charset=UTF-8")
             self.end_headers()
-            #self.wfile.write(b"Endpoint not found")  # checker issue 
-            self.wfile.write(b"404 Not Found")
+            self.wfile.write(b"Endpoint not found")  # checker issue 
+            # self.wfile.write(b"404 Not Found")
 
     def _json_data_response(self, dataset):
         """You should return a simple dataset"""
