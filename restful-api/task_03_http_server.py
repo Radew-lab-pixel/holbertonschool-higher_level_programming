@@ -17,6 +17,11 @@ data = {
     "city": "New York"
 }
 
+info = {
+    "version": "1.0",
+    "description": "A simple API built with http.server"
+    }
+
 """basic webserver"""
 def webserver_basic():
     
@@ -52,15 +57,27 @@ class simpleHTTPServer(BaseHTTPRequestHandler):
         if parsed_path.path == '/data':
             # self.handle_json_data response()
             print("endpoint /data parsed")
-            self.wfile.write(b"\nendpoint /data parsed\n")
-            self._json_data_response()
+            self.wfile.write(b"\nendpoint /data parsed")
+            #self._json_data_response()
+            self._json_data_response(data)
 
-    def _json_data_response(self):
+        elif parsed_path.path == '/info':
+            print('endpoint /info parased')
+            self.wfile.write(b"\nendpoint /info parsed")
+            self._json_data_response(info)
+
+        else:
+            self.send_response(404)
+            self.end_headers()
+            self.wfile.write(b"\nEndpoint not found\n")
+
+    def _json_data_response(self, dataset):
         """You should return a simple dataset"""
+        self.wfile.write(b"\nOK\n")
         self.send_response(200)
         self.send_header('Content-Type', 'application/json')
         self.end_headers()
-        self.wfile.write(json.dumps(data).encode())
+        self.wfile.write(json.dumps(dataset).encode())
 
 httpd = HTTPServer(('', 8000), simpleHTTPServer)
 httpd.serve_forever()
