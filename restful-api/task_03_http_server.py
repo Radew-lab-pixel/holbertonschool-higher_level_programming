@@ -56,14 +56,14 @@ class simpleHTTPServer(BaseHTTPRequestHandler):
         
         if parsed_path.path == '/data':
             # self.handle_json_data response()
-            print("endpoint /data parsed")
-            self.wfile.write(b"\nendpoint /data parsed")
+            # print("endpoint /data parsed")
+            # self.wfile.write(b"\nendpoint /data parsed")
             #self._json_data_response()
             self._json_data_response(data)
 
         elif parsed_path.path == '/info':
-            print('endpoint /info parased')
-            self.wfile.write(b"\nendpoint /info parsed")
+            # print('endpoint /info parased')
+            # self.wfile.write(b"\nendpoint /info parsed")
             self._json_data_response(info)
 
         else:
