@@ -22,9 +22,10 @@ info = {
     "description": "A simple API built with http.server"
     }
 
-"""basic webserver"""
+
 def webserver_basic():
-    
+    """basic webserver
+    """
     PORT = 8000
 
     Handler = http.server.SimpleHTTPRequestHandler
@@ -87,8 +88,8 @@ class simpleHTTPServer(BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header("Content-type", "text/plain; charset=UTF-8")
             self.end_headers()
-            self.wfile.write(b"Endpoint not found")  # checker issue 
-            # self.wfile.write(b"404 Not Found")
+            # self.wfile.write(b"404 Not Found")  # checker issue
+            self.wfile.write(b"Endpoint not found")  # checker issue          
 
     def _json_data_response(self, dataset):
         """You should return a simple dataset"""
@@ -102,5 +103,4 @@ httpd = HTTPServer(('', 8000), simpleHTTPServer)
 httpd.serve_forever()
 
 # def main():
-# webserver_basic()   
-
+# webserver_basic()
