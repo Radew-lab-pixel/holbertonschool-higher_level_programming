@@ -69,11 +69,11 @@ class simpleHTTPServer(BaseHTTPRequestHandler):
         else:
             self.send_response(404)
             self.end_headers()
-            self.wfile.write(b"\nEndpoint not found\n")
+            self.wfile.write(b"Endpoint not found")
 
     def _json_data_response(self, dataset):
         """You should return a simple dataset"""
-        self.wfile.write(b"\nOK\n")
+        self.wfile.write(b"OK")
         self.send_response(200)
         self.send_header('Content-Type', 'application/json')
         self.end_headers()
