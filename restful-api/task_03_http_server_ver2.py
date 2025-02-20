@@ -40,21 +40,19 @@ class simpleHTTPServer(BaseHTTPRequestHandler):
         duplicate the function of http.server.SimpleHTTPRequestHandler
     """
     def do_GET(self):
-        """Handle HTTP GET request move to elif """
-        # self.send_response(200)
+        """Handle HTTP GET request"""
+        self.send_response(200)
         # send header
         # self.send_header("Content-Type", "application/json;charset=UTF-8")
         
-        #self.end_headers()
+        self.end_headers()
         # response by stdout Hello ... 
-        #self.wfile.write(b'Hello, this is a simple API!')
-        
+        self.wfile.write(b'Hello, this is a simple API!')
         # respond by stdout data in json format
         # json.dump(data, self.wfile) # has to be in post
 
         """Handle GET requests to parse url address"""
         parsed_path = urlparse(self.path)
-        # parsed_path = self.path  # this work too without urllib.urlparse
         
         if parsed_path.path == '/data':
             # self.handle_json_data response()
@@ -68,15 +66,8 @@ class simpleHTTPServer(BaseHTTPRequestHandler):
             # self.wfile.write(b"\nendpoint /info parsed")
             self._json_data_response(info)
 
-        elif parsed_path.path == '/':  # root directory / main page
-            self.send_response(200)
-            # send header
-            # self.send_header("Content-Type", "application/json;charset=UTF-8")
-        
-            self.end_headers()
-            # response by stdout Hello ... 
-            self.wfile.write(b'Hello, this is a simple API!')
-
+        elif parsed_path == None:
+            
         else:
             self.send_response(404)
             self.end_headers()
