@@ -60,11 +60,12 @@ def user(id):
         return {"error": "User not found"}, 404
     else:
         # return jsonify(users[id]), 201
-        # data_user = {"username": id, "name": username["name"], "age": username["age"], "city": username["city"]}    
-        # return jsonify(data_user), 201  # failed checker but worked in local terminal
-        # return jsonify(username[1])
-        return jsonify(f"username: {id} {username}")
-    
+        data_user = {"username": id, "name": username["name"], "age": username["age"], "city": username["city"]}    
+        return jsonify(data_user), 201  # failed checker but worked in local terminal
+        # return jsonify(username)
+        # return jsonify(users[id])
+        # return jsonify(f"username: {id} {username}")
+        # retturn jsonify(user[id])
 """ function to return status """
 @app.route("/status")
 def status():
@@ -96,11 +97,13 @@ def add_user():
         return jsonify({"error": "Username is required"}), 400
     
     username = user_data['username']
+    # print(username)
     # users[username] = user_data
     users[username] = {"name": user_data["name"], "age": user_data["age"], "city": user_data["city"]}
     return jsonify({
-        "message": "User added", "user": user_data}), 201
+        "message": "User added", "user": user_data}), 200
         #"message": "User added", "user": users[username]}), 201
+
 if __name__ == '__main__':
     app.run(debug=True)
 
