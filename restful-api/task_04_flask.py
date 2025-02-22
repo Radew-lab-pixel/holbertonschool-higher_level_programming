@@ -57,7 +57,7 @@ def jane():
 def user(id):
     username = users.get(id)
     if username is None:
-        return {"error": "User not found"}, 400
+        return {"error": "User not found"}, 404
     else:
         return jsonify(users[id]), 201
 
@@ -67,6 +67,7 @@ def status():
     return ("OK")
 
 """ function to add a user """
+"""
 @app.route('/add_user', methods=['POST'])
 def add_user():
 
@@ -76,12 +77,27 @@ def add_user():
         # username = user_data['username']
     username = user_data("username")
     if username is None:
-        return {"error": "User not found"}, 400
+        return {"error": "User not found"}, 404
     
     users[username] = user_data
     return { "message": "User added successfully",
             "user": user_data}, 201
-   
+"""
+@app.route('/add_user', methods=['POST'])
+def add_user():
+    user_data = request.get_json()  # Parse JSON data from request
+    
+    # Check if 'username' exists in the received data
+    if 'username' not in user_data:
+        return jsonify({"error": "Username is required"}), 400
+    
+    username = user_data['username']
+    users[username] = user_data
+    
+    return jsonify({
+        "message": "User added successfully",
+        "user": user_data
+    }), 201
 
 if __name__ == '__main__':
     app.run(debug=True)
