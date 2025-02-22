@@ -3,7 +3,7 @@
 from flask import Flask, request
 from flask import jsonify
 app = Flask(__name__)
-app.config['JSON_SORT_KEYS'] = False
+# app.config['JSON_SORT_KEYS'] = False
 
 """
 users = {
@@ -62,12 +62,13 @@ def user(id):
     else:
         # return jsonify(users[id]), 201
         # data_user = {"username": id, "name": username["name"], "age": username["age"], "city": username["city"]}
-        data_user = {"city": username["city"], "age": username["age"], "name": username["name"], "username": id}    
-        return jsonify(data_user), 201  # failed checker but worked in local terminal
-        # return jsonify(username)
+        # data_user = {"city": username["city"], "age": username["age"], "name": username["name"], "username": id}    
+        # return jsonify(data_user), 201  # failed checker but worked in local terminal
+        return jsonify(username)
         # return jsonify(users[id])
         # return jsonify(f"username: {id} {username}")
-        # retturn jsonify(user[id])
+        # return jsonify(users[id])
+
 """ function to return status """
 @app.route("/status")
 def status():
@@ -101,7 +102,7 @@ def add_user():
     username = user_data['username']
     # print(username)
     # users[username] = user_data
-    users[username] = {"name": user_data["name"], "age": user_data["age"], "city": user_data["city"]}
+    users[username] = {"username":user_data["username"], "name": user_data["name"], "age": user_data["age"], "city": user_data["city"]}
     return jsonify({
         "message": "User added", "user": user_data}), 200
         #"message": "User added", "user": users[username]}), 201
