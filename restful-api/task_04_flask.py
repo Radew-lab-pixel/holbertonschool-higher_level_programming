@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from flask import Flask
+from flask import Flask, request
 from flask import jsonify
 app = Flask(__name__)
 
@@ -10,6 +10,7 @@ users = {
              "age": 28,
              "city": "Los Angeles"
              }}
+"""
 """
 users = {
     "jane": {"username": "jane",
@@ -22,6 +23,9 @@ users = {
              "age": 30,
              "city": "New York"
              }}
+"""
+users = {}
+
 
 """ home function"""
 @app.route('/')
@@ -57,6 +61,21 @@ def user(id):
 @app.route("/status")
 def status():
     return ("OK")
+
+""" function to add a user """
+@app.route('/add_user', methods=['POST'])
+def add_user():
+
+
+    def add_user():
+        user_data = request.get_json()  # convert to json string
+        # username = user_data['username']
+    username = user_data("username")
+    users[username] = user_data
+    return { "message": "User added successfully",
+            "user": user_data
+    }, 201
+   
 
 if __name__ == '__main__':
     app.run(debug=True)
