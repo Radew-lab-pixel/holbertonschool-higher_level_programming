@@ -75,38 +75,30 @@ def status():
     return ("OK")
 
 """ function to add a user """
-
+"""
 @app.route('/add_user', methods=['POST'])
 def add_user():
-    user_data = request.get_json()  # convert to json string
-    # username = user_data['username']
-    username = user_data.get("username")
+
+
+    def add_user():
+        user_data = request.get_json()  # convert to json string
+        # username = user_data['username']
+    username = user_data("username")
     if username is None:
-        # return {"error": "User not found"}, 404
-        return jsonify({"error": "Username is required"}), 400
-    else:
-        users[username] = user_data
-        return jsonify({ "message": "User added successfully","user": user_data}), 201
+        return {"error": "User not found"}, 404
+    
+    users[username] = user_data
+    return { "message": "User added successfully",
+            "user": user_data}, 201
 """
 @app.route('/add_user', methods=['POST'])
 def add_user():
-    user_data = request.get_json()  # Parse JSON data from request
-    
-    # Check if 'username' exists in the received data
-    if 'username' not in user_data:
+    user_data = request.get_json()
+    username = user_data.get("username")
+    if not username:
         return jsonify({"error": "Username is required"}), 400
-    
-    username = user_data['username']
-    # print(username)
-    # users[username] = user_data
-    users[username] = {"username":user_data["username"], "name": user_data["name"],"age": user_data["age"], "city": user_data["city"]}
-    # output = {"name": user_data["name"], "age": user_data["age"], "city": user_data["city"]}
-
-    return jsonify({
-        #"message": "User added", "user": output}), 201
-        # "message": "User added", "user": user_data}), 200  # failed checker
-        "message": "User added", "user": users[username]}), 201
-"""
+    users[username] = user_data
+    return jsonify({"message": "User added", "user": user_data}), 201
 
 
 if __name__ == '__main__':

@@ -102,5 +102,4 @@ class simpleHTTPServer(BaseHTTPRequestHandler):
 httpd = HTTPServer(('', 8000), simpleHTTPServer)
 httpd.serve_forever()
 
-# def main():
 # webserver_basic()
