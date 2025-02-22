@@ -97,7 +97,7 @@ class simpleHTTPServer(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-Type', 'application/json')
         self.end_headers()
-        self.wfile.write(json.dumps(dataset).encode())
+        self.wfile.write(json.dumps(dataset).encode("utf-8"))
 
 httpd = HTTPServer(('', 8000), simpleHTTPServer)
 httpd.serve_forever()
