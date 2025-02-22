@@ -59,8 +59,10 @@ def user(id):
     if username is None:
         return {"error": "User not found"}, 404
     else:
-        return jsonify(users[id]), 201
-
+        # return jsonify(users[id]), 201
+        data_user = {"username": id, "name": username["name"], "age": username["age"], "city": username["city"]}    
+        return jsonify(data_user), 201
+    
 """ function to return status """
 @app.route("/status")
 def status():
