@@ -102,12 +102,10 @@ def add_user():
     username = user_data['username']
     # print(username)
     # users[username] = user_data
-    users[username] = {"username":user_data["username"], "name": user_data["name"],
-                       "age": user_data["age"], "city": user_data["city"]}
+    users[username] = {"username":user_data["username"], "name": user_data["name"],"age": user_data["age"], "city": user_data["city"]}
     output = {"name": user_data["name"], "age": user_data["age"], "city": user_data["city"]}
 
-    return jsonify({
-        "message": "User added", "user": output}), 200
+    return jsonify({"message": "User added", "user": output}), 200
         # "message": "User added", "user": user_data}), 200  # failed checker
         # "message": "User added", "user": users[username]}), 201
 
