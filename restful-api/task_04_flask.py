@@ -55,7 +55,11 @@ def jane():
 """ data function specific to a particular user """
 @app.route("/users/<string:id>")  # flask a bit like html format
 def user(id):
-    return jsonify(users[id])
+    username = users.get(id)
+    if username is None:
+        return {"error": "User not found"}, 400
+    else:
+        return jsonify(users[id]), 201
 
 """ function to return status """
 @app.route("/status")
