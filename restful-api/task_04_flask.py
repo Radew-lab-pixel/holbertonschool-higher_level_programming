@@ -42,8 +42,8 @@ def data():
     # return jsonify(users), 200
     # return jsonify({"users": list(users.keys())})
     # return "Testing"
-    # return jsonify({list(users.keys())})
-    return jsonify(users)
+    return jsonify(list(users.keys()))
+    #return jsonify(users)
 
 """ data function specific to a user jane for debugging """
 @app.route("/jane_test")
