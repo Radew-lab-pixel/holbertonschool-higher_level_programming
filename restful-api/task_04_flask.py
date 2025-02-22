@@ -71,10 +71,12 @@ def add_user():
         user_data = request.get_json()  # convert to json string
         # username = user_data['username']
     username = user_data("username")
+    if username is None:
+        return {"error": "User not found"}, 400
+    
     users[username] = user_data
     return { "message": "User added successfully",
-            "user": user_data
-    }, 201
+            "user": user_data}, 201
    
 
 if __name__ == '__main__':
