@@ -75,21 +75,18 @@ def status():
     return ("OK")
 
 """ function to add a user """
-"""
+
 @app.route('/add_user', methods=['POST'])
 def add_user():
-
-
-    def add_user():
-        user_data = request.get_json()  # convert to json string
-        # username = user_data['username']
-    username = user_data("username")
+    user_data = request.get_json()  # convert to json string
+    # username = user_data['username']
+    username = user_data.get("username")
     if username is None:
-        return {"error": "User not found"}, 404
-    
-    users[username] = user_data
-    return { "message": "User added successfully",
-            "user": user_data}, 201
+        # return {"error": "User not found"}, 404
+        return jsonify({"error": "Username is required"}), 400
+    else:
+        users[username] = user_data
+        return jsonify({ "message": "User added successfully","user": user_data}), 201
 """
 @app.route('/add_user', methods=['POST'])
 def add_user():
@@ -109,6 +106,8 @@ def add_user():
         #"message": "User added", "user": output}), 201
         # "message": "User added", "user": user_data}), 200  # failed checker
         "message": "User added", "user": users[username]}), 201
+"""
+
 
 if __name__ == '__main__':
     app.run(debug=True)
