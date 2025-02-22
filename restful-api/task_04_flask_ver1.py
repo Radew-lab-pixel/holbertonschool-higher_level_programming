@@ -62,9 +62,7 @@ def user(id):
         # return jsonify(users[id]), 201
         # data_user = {"username": id, "name": username["name"], "age": username["age"], "city": username["city"]}    
         # return jsonify(data_user), 201  # failed checker but worked in local terminal
-        # return jsonify(username[1])
-        return jsonify(f"username: {id} {username}")
-    
+        return jsonify(username)
 """ function to return status """
 @app.route("/status")
 def status():
