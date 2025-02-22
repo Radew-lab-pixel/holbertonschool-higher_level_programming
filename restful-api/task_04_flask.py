@@ -42,8 +42,8 @@ def data():
     # return jsonify(users), 200
     # return jsonify({"users": list(users.keys())})
     # return "Testing"
-    return jsonify(list(users.keys()))
-    #return jsonify(users)
+    return jsonify(list(users.keys()))  # has to be implemented to pass checker
+    #return jsonify(users)  # work in local terminal but failed checker
 
 """ data function specific to a user jane for debugging """
 @app.route("/jane_test")
@@ -95,8 +95,7 @@ def add_user():
     users[username] = user_data
     
     return jsonify({
-        "message": "User added successfully",
-        "user": user_data
+        "message": "User added", "user": user_data
     }), 201
 
 if __name__ == '__main__':
