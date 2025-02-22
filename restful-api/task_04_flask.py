@@ -3,6 +3,7 @@
 from flask import Flask, request
 from flask import jsonify
 app = Flask(__name__)
+app.config['JSON_SORT_KEYS'] = False
 
 """
 users = {
@@ -60,7 +61,8 @@ def user(id):
         return {"error": "User not found"}, 404
     else:
         # return jsonify(users[id]), 201
-        data_user = {"username": id, "name": username["name"], "age": username["age"], "city": username["city"]}    
+        # data_user = {"username": id, "name": username["name"], "age": username["age"], "city": username["city"]}
+        data_user = {"city": username["city"], "age": username["age"], "name": username["name"], "username": id}    
         return jsonify(data_user), 201  # failed checker but worked in local terminal
         # return jsonify(username)
         # return jsonify(users[id])
