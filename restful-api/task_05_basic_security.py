@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 from flask import Flask, request
 from flask import jsonify
-import jwt
+# import jwt
+from flask_jwt_extended import create_access_token, JWTManager
 
 ''' source code from https://flask-httpauth.readthedocs.io/en/latest/ '''
 from werkzeug.security import generate_password_hash, check_password_hash
