@@ -7,10 +7,12 @@ from flask_jwt_extended import create_access_token, JWTManager
 ''' source code from https://flask-httpauth.readthedocs.io/en/latest/ '''
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_httpauth import HTTPBasicAuth
-
+import os
 
 app = Flask(__name__)
 auth = HTTPBasicAuth()
+# app.config['SECRET_KEY'] = 'your_secret_key_here'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'fallback-dev-key')
 
 users = {
     "user1": {"username": "user1", "password": generate_password_hash("password"), "role": "user"},
