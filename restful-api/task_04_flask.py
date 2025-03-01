@@ -55,6 +55,7 @@ def jane():
 
 """ data function specific to a particular user """
 @app.route("/users/<string:id>")  # flask a bit like html format
+# app.route("/users/<useername>")
 def user(id):
     username = users.get(id)
     if username is None:
