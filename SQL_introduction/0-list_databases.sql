@@ -1,3 +1,2 @@
-#!/bin/bash
-
-mysql  -e "SHOW DATABASES;"
+-- 0-list_databases.sql
+SHOW DATABASES;
