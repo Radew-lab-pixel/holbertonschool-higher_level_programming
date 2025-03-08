@@ -1,12 +1,10 @@
--- Creates the database hbtn_0d_2 and the user user_0d_2
--- The user_0d_2 has SELECT privilege on hbtn_0d_2 with password user_0d_2_pwd
-CREATE DATABASE
-    IF NOT EXISTS `hbtn_0d_2`;
-CREATE USER
-    IF NOT EXISTS 'user_0d_2'@'localhost'
-    IDENTIFIED BY 'user_0d_2_pwd';
-GRANT SELECT
-   ON `hbtn_0d_2`.*
-   TO 'user_0d_2'@'localhost'
-   IDENTIFIED BY 'user_0d_2_pwd';
+-- 2-create_read_user.sql
+-- mysql -u root -p < 2-create_read_user.sql
+CREATE DATABASE IF NOT EXISTS htbn_0d_2;
+USE htbn_0d_2;
+CREATE USER IF NOT EXISTS 'user_0d_2'@'localhost' IDENTIFIED BY 'user_0d_2_pwd';
+GRANT SELECT ON htbn_0d_2.* TO 'user_0d_2'@'localhost';
 FLUSH PRIVILEGES;
+-- REVOKE ALL PRIVILEGES ON htb_0d_2.* FROM USER 'user_0d_2'@'localhost'; not working
+-- REVOKE ALL PRIVILEGES ON hbtn_0d_2.* FROM 'user_0d_2'@'localhost';
+-- FLUSH PRIVILEGES;
