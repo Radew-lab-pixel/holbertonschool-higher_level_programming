@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../FlaskIntroduction"
+		},
+		{
+			"path": "../Flask_blog"
+		}
+	]
+}
