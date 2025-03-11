@@ -19,7 +19,7 @@ db = MySQLdb.connect(host="localhost", port=3306,
 pointer = db.cursor()
 
 # execute a query
-pointer.execute("SELECT * FROM states ORDER BY states.id")
+pointer.execute("SELECT * FROM states ORDER BY id")
 
 # fetch the result (fetchone fetch the next row)
 row = pointer.fetchone()
