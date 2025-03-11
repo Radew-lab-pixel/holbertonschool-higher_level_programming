@@ -30,13 +30,13 @@ if __name__ == "__main__":
     # execute a query
     pointer.execute("SELECT cities.name FROM cities\
                     JOIN states ON cities.state_id = states.id\
-                        AND states.name = %s\
+                        WHERE states.name = %s\
                     ORDER BY cities.id", (state_name,))
 
     # fetch result from pointer
     rows = pointer.fetchall()
-    if rows:
-        """
+    # if rows:
+    """
         n = len(rows)
         count = 0  # counter for detecting last row
         for row in rows:
@@ -45,10 +45,10 @@ if __name__ == "__main__":
             else:
                 print(f"{row[0]}")
             count += 1
-        """
-        # recommended by chatGPT to pass the checker on NULL cities
-        cities = [row[0] for row in rows]
-        print(", ".join(cities))
+    """
+    # recommended by chatGPT to pass the checker on NULL cities
+    cities = [row[0] for row in rows]
+    print(", ".join(cities))
 
     # print()
     # close pointer and db
