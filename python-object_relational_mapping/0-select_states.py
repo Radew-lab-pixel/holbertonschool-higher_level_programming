@@ -4,7 +4,6 @@ import MySQLdb
 import sys
 # read argumnent
 n = len(sys.argv)
-
 """if n != 3:
     print("Arguments number need to be 3")
     exit()
@@ -20,7 +19,7 @@ db = MySQLdb.connect(host="localhost", port=3306,
 pointer = db.cursor()
 
 # execute a query
-pointer.execute("SELECT * FROM states BY ORDER states.id")
+pointer.execute("SELECT * FROM states ORDER BY states.id")
 
 # fetch the result (fetchone fetch the next row)
 row = pointer.fetchone()
