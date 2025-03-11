@@ -1,12 +1,13 @@
 #!/usr/bin/python3
+"""Write a script that lists all states from the database hbtn_0e_0_usa: """
 import MySQLdb
 import sys
 # read argumnent
 n = len(sys.argv)
-"""
-if n != 3:
+
+"""if n != 3:
     print("Arguments number need to be 3")
-    exit()"
+    exit()
 """
 mysql_username = sys.argv[0]
 mysql_password = sys.argv[1]
