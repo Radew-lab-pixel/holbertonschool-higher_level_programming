@@ -21,7 +21,7 @@ def main():
     pointer = db.cursor()
 
     # execute a query
-    pointer.execute("SELECT * FROM states ORDER BY id")
+    pointer.execute("SELECT * FROM states ORDER BY id ASC")
 
     # fetch the result (fetchone fetch the next row)
     row = pointer.fetchone()
