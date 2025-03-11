@@ -27,7 +27,7 @@ if __name__ == "__main__":
     # fetch result from pointer
     rows = pointer.fetchall()
     for row in rows:
-        print(f"({row[0]}, '{row[1]}', '{row[2]}")
+        print(f"({row[0]}, '{row[1]}', '{row[2]}')")
 
     # close pointer and db
     pointer.close()
