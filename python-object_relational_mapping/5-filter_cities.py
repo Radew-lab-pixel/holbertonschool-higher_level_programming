@@ -6,6 +6,12 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
+
+    # Check for correct number of arguments - recommended by chatGPT
+    if len(sys.argv) != 5:
+        print("Usage: ./script.py <user> <pass> <db> <state>")
+        sys.exit(1)
+
     mysql_username = sys.argv[1]
     mysql_password = sys.argv[2]
     database_name = sys.argv[3]
