@@ -9,13 +9,15 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 # class inherited from Base
+
+
 class State(Base):
     """ State class
 
-        Attrubutes:
+        Attributes:
         Base : declarative base
     """
-    # table
+    # table mapping
     __tablename__ = 'states'
     id = Column(Integer, autoincrement=True, primary_key=True)
     name = Column(String(128), nullable=False)
