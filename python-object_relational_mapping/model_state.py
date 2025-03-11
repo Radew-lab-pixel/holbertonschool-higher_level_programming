@@ -8,8 +8,14 @@ from sqlalchemy.ext.declarative import declarative_base
 # instance base from Declarative base
 Base = declarative_base()
 
-# class State inherited from Base
+# class inherited from Base
 class State(Base):
+    """ State class
+
+        Attrubutes:
+        Base : declarative base
+    """
+    # table
     __tablename__ = 'states'
     id = Column(Integer, autoincrement=True, primary_key=True)
     name = Column(String(128), nullable=False)
