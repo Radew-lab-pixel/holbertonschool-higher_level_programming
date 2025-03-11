@@ -29,8 +29,8 @@ if __name__ == "__main__":
     # create a cursor pointer
     pointer = db.cursor()
 
-    # execute a query
-    pointer.execute("SELECT * FROM states WHERE name = %s\
+    # execute a query , binary added to enforce case sensitive 
+    pointer.execute("SELECT * FROM states WHERE binary name = %s\
                     ORDER BY id ASC", (state_name_searched,))
 
     # fetch the result using fetchall to pass the checker
