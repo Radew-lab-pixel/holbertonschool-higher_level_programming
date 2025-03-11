@@ -33,5 +33,5 @@ def main():
     pointer.close()
     db.close()
 
-if __name == "__main__":
+if __name__ == "__main__":
     sys.exit(main())
