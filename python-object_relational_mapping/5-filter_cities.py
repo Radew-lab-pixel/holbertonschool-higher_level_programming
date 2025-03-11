@@ -32,11 +32,11 @@ if __name__ == "__main__":
     n = len(rows)
     count = 0  # counter for detecting last row
     for row in rows:
-        if (count!=(n-1)):
+        if count != (n-1):
             print(f"{row[0]},", end=" ")
         else:
             print(f"{row[0]}")
-        count+=1
+        count += 1
     # print()
     # close pointer and db
     pointer.close()
