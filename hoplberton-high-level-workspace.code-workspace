@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../Flask_blog"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../holbertonschool-hbnb"
+		},
+		{
+			"path": "../flask_restx_example"
+		}
+	]
+}

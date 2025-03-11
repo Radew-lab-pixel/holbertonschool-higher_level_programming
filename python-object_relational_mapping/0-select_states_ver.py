@@ -33,7 +33,7 @@ def main():
     # fetch the result using fetchall to pass the checker
     rows = pointer.fetchall()
     for row in rows:
-        print(row)
+        print(f"{row[0]}, '{row[1]}'")
     # close cursor pointer and db connection
     pointer.close()
     db.close()
