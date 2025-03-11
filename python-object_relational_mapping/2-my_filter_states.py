@@ -29,7 +29,7 @@ if __name__ == "__main__":
     # create a cursor pointer
     pointer = db.cursor()
 
-    # execute a query , binary added to enforce case sensitive 
+    # execute a query , binary added to enforce case sensitive
     pointer.execute("SELECT * FROM states WHERE binary name = %s\
                     ORDER BY id ASC", (state_name_searched,))
 
