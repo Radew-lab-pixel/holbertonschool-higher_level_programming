@@ -5,7 +5,7 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
-# def main():
+    # def main():
     # read argumnent
     n = len(sys.argv)
     """if n != 3:
@@ -16,9 +16,12 @@ if __name__ == "__main__":
     mysql_password = sys.argv[2]
     database_name = sys.argv[3]
     # Establish a connection
-    db = MySQLdb.connect(host="localhost", port=3306,
-        user=mysql_username, password=mysql_password, database=database_name)
-    
+    db = MySQLdb.connect(
+        host="localhost",
+        port=3306,
+        user=mysql_username,
+        password=mysql_password,
+        database=database_name)
     # create a cursor pointer
     pointer = db.cursor()
 
