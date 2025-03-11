@@ -7,7 +7,7 @@ import sys
 
 if __name__ == "__main__":
 
-    # Check for correct number of arguments - recommended by chatGPT
+    # Check for correct number of arguments - recommended by chat
     if len(sys.argv) != 5:
         print("Usage: ./script.py <user> <pass> <db> <state>")
         sys.exit(1)
@@ -35,8 +35,9 @@ if __name__ == "__main__":
 
     # fetch result from pointer
     rows = pointer.fetchall()
-    n = len(rows)
-    if n != 0:
+    if rows:
+        n = len(rows)
+
         count = 0  # counter for detecting last row
         for row in rows:
             if count != (n-1):
