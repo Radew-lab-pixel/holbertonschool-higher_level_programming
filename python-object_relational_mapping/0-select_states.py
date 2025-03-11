@@ -23,12 +23,17 @@ def main():
     # execute a query
     pointer.execute("SELECT * FROM states ORDER BY id ASC")
 
-    # fetch the result (fetchone fetch the next row)
+    """ # fetch the result (fetchone fetch the next row)
     row = pointer.fetchone()
     while row is not None:
         print(row)
-        row = pointer.fetchone()
+        row = pointer.fetchone()"
+    """
 
+    # fetch the result using fetchall to pass the checker
+    rows = pointer.fetchall()
+    for row in rows:
+        print(row)
     # close cursor pointer and db connection
     pointer.close()
     db.close()
