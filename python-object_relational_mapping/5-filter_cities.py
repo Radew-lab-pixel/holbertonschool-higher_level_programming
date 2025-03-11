@@ -36,7 +36,7 @@ if __name__ == "__main__":
     # fetch result from pointer
     rows = pointer.fetchall()
     if rows:
-
+        """
         n = len(rows)
         count = 0  # counter for detecting last row
         for row in rows:
@@ -45,10 +45,10 @@ if __name__ == "__main__":
             else:
                 print(f"{row[0]}")
             count += 1
-
+        """
         # recommended by chatGPT to pass the checker on NULL cities
-        # cities = [row[0] for row in rows]
-        # print(", ".join(cities))
+        cities = [row[0] for row in rows]
+        print(", ".join(cities))
 
     # print()
     # close pointer and db
