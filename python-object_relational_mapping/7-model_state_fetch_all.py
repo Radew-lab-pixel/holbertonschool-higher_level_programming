@@ -10,8 +10,6 @@ from sqlalchemy.orm import sessionmaker
 import sys
 from model_state import State
 
-
-
 if __name__ == "__main__":
     # instance base from Declarative base
     # Base = declarative_base()
@@ -25,16 +23,16 @@ if __name__ == "__main__":
     # state_name = sys.argv[4]
 
     url_object = URL.create(
-    "mysql+mysqldb",
-    username=mysql_username,
-    password=mysql_password,  # plain (unescaped) text
-    host="localhost",
-    port=3306,
-    database=database_name)
+        "mysql+mysqldb",
+        username=mysql_username,
+        password=mysql_password,  # plain (unescaped) text
+        host="localhost",
+        port=3306,
+        database=database_name)
 
     engine = create_engine(url_object)
 
-    # sessionmaker replaced both Base.metadata.create_all(engine) 
+    # sessionmaker replaced both Base.metadata.create_all(engine)
     # and session = Session(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
@@ -42,4 +40,3 @@ if __name__ == "__main__":
     for state in session.query(State).order_by(State.id):
         # print("{}: {}".format(state.id, state.name))
         print(f"{state.id}: {state.name}")
-        
