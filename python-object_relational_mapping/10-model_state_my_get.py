@@ -25,8 +25,14 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()  # start a session
 
+    """ will not work as won't return a NULL if not matching"
+        thus "Not found" won't be printed
     results = session.query(State).filter(
         State.name.like(state_name_to_search))
+    """
+
+    results = session.query(State).filter(
+        State.name == state_name_to_search).all()
 
     if results:
         for result in results:
