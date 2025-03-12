@@ -12,7 +12,8 @@ from model_state import State
 
 if __name__ == "__main__":
     # instance base from Declarative base
-    # Base = declarative_base()
+    # Base = declarative_base()  # only for creating table thus
+    # not needed as table been created 
 
     # class inherited from Base
     # class State(Base):  imported from model_state

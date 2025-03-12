@@ -1,0 +1,2 @@
+cat 6-model_state.sql
+cat 6-model_state.sql | mysql -uroot -p
