@@ -33,7 +33,7 @@ if __name__ == "__main__":
     results = session.query(State).filter(State.name.like(search_char)).all()
 
     for result in results:
-        session.delete(result) # has to delete one object or data one at a time
+        session.delete(result)  # has to delete one object or data one at a time
     session.commit()  # apply delete change to database
 
     session.close()
