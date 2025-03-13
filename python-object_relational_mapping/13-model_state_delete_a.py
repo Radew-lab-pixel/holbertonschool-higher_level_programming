@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" Write a script that changes the name of a State
-    object from the database hbtn_0e_6_usa
+""" Write a script that deletes all State objects with a name
+    containing the letter a from the database hbtn_0e_6_usa
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
@@ -15,24 +15,25 @@ if __name__ == "__main__":
     mysql_password = sys.argv[2]
     database_name = sys.argv[3]
     port = 3306
-    state_id_search = 2
-    replaced_name = "New Mexico"
+    search_char = '%a%'
 
     # create core engine
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:{}/{}'
                            .format(mysql_username, mysql_password, port,
                                    database_name), pool_pre_ping=True)
 
-    # start ORM engine
-    Session = sessionmaker(bind=engine)
+    Session = sessionmaker(bind=engine)  # start ORM engine
     session = Session()  # start session
 
-    # filter for the State object of id = 2 that needed update
-    results = session.query(State).filter(State.id == state_id_search).all()
+    # Filter for State object of name containing 'a'
 
-    # update name
+    # == doesn't work as not deleting
+    # results = session.query(State).filter(State.name == search_char).all()
+
+    results = session.query(State).filter(State.name.like(search_char)).all()
+
     for result in results:
-        result.name = replaced_name
-    session.commit()  # apply update change
+        session.delete(result) # has to delete one object or data one at a time
+    session.commit()  # apply delete change to database
 
-    session.close()  # good practice to close session for security
+    session.close()
