@@ -1,2 +1,4 @@
 cat 6-model_state.sql
 cat 6-model_state.sql | mysql -uroot -p
+./6-model_state.py root root hbtn_0e_6_usa
+cat 7-model_state_fetch_all.sql
