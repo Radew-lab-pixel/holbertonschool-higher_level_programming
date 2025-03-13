@@ -31,6 +31,7 @@ if __name__ == "__main__":
         State.name.like(state_name_to_search))
     """
 
+    # filter is like WHERE in mySQL
     results = session.query(State).filter(
         State.name == state_name_to_search).all()
 
