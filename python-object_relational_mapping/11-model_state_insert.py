@@ -36,7 +36,7 @@ if __name__ == "__main__":
     session.commit()  # save to database
 
     # Read/ query
-    # results = session.query(State).order_by(State.id).all()  for debugging 
+    # results = session.query(State).order_by(State.id).all()  for debugging
     """results = session.query(State).all().order_by(State.id)
     error as have to be in sequence """
     results = session.query(State).filter(
