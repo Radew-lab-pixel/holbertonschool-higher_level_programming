@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # from model_city import State  -- translation error not needed
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
