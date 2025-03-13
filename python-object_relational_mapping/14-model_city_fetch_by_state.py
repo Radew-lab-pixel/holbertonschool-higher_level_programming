@@ -7,13 +7,13 @@ from sqlalchemy.orm import sessionmaker
 import sys
 from model_state import State
 from model_city import City
-
+ 
 if __name__ == "__main__":
     mysql_username = sys.argv[1]
     mysql_password = sys.argv[2]
     database_name = sys.argv[3]
     port = 3306
-    
+
     # create core engine
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:{}/{}'
                            .format(mysql_username, mysql_password, port,
@@ -31,8 +31,9 @@ if __name__ == "__main__":
 
     # for result in results:
 
-    # can access state and city in results as session.query return both tables structure
+    # can access state and city in results as session.query
+    # return both tables structure
     for state, city in results:
         print(f"{state.name}: ({city.id}) {city.name}")
-    
-    session.close() # optional close for security
+
+    session.close()  # optional close for security
