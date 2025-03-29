@@ -2,15 +2,16 @@
 import logging  # for reporting errors
 import os
 
-
 def generate_invitations(template, attendees):
-    """sumary_line
+    """
+    Python function that generates personalized invitation
+    files from a template with placeholders and a list of objects.
     
     Keyword arguments:
     argument : 
-    template: template with placeholder
-    attendees : list of attendees object
-    Return: return_description
+        template: template with placeholder
+        attendees : list of attendees object
+    Return: 1 if unsuccessful else write to file
     """
     if not isinstance(template, str):
         logging.error("Template is not string")
@@ -57,14 +58,9 @@ def generate_invitations(template, attendees):
         else:       
             with open(filename, 'w') as f:
                 f.write(invite)
-        count+= 1
-
-    
-
+        count+= 1 
     
 if __name__ == "__main__":
-
-
 
     template = """
     
@@ -77,9 +73,6 @@ if __name__ == "__main__":
     Best regards,
     Event Team
     """
-    
-
-
     attendees = [
     {"name": "Alice", "event_title": "Python Conference", "event_date": "2023-07-15", "event_location": "New York"},
     {"name": "Bob", "event_title": "Data Science Workshop", "event_date": "2023-08-20", "event_location": "San Francisco"},
