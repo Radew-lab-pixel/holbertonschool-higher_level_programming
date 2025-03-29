@@ -51,9 +51,9 @@ def generate_invitations(template, attendees):
         # print(template) for debugging
 
         invite = template.replace("{name}", name) .replace("{event_title}", event_title)\
-        .replace("{event_date}", event_date) . replace("event_location", event_location)
+        .replace("{event_date}", event_date) . replace("{event_location}", event_location)
         # invite = invite.replace("{event_date}", event_date) for debugging 
-        print(invite)
+        # print(invite) for debugging
 
         filename= f"output_{count}.txt"       
     
