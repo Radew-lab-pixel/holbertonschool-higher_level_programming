@@ -34,18 +34,30 @@ def generate_invitations(template, attendees):
     
     count= 1
     for attendee in attendees:
-        name = attendee.get("name", "N/A")
-        event_title = attendee.get("event_title", "N/A")
-        event_date = attendee.get("event_date", "N/A")
-        event_location = attendee.get("event_location", "N/A")
+        # name = attendee.get("name", "N/A")
+        name = attendee.get("name") or "N/A"
+        event_title = attendee.get("event_title") or "N/A"
+        event_date = attendee.get("event_date") or "N/A"
+        event_location = attendee.get("event_location") or "N/A"
 
-        invite = template.replace('{name}', name)\
+        """ invite = template.replace('{name}', name)\
                             .replace("{event_title}", event_title)\
                             .replace("{event_date}", event_date)\
-                            .replace("{event_location}", event_location)
+                            .replace("{event_location}", event_location) 
+        """
+        
+
+        print(f"{name}  {event_title}  {event_date}  {event_location}\n")        
+        # print(template) for debugging
+
+        invite = template.replace("{name}", name) .replace("{event_title}", event_title)\
+        .replace("{event_date}", event_date) . replace("event_location", event_location)
+        # invite = invite.replace("{event_date}", event_date) for debugging 
+        print(invite)
 
         filename= f"output_{count}.txt"       
-
+    
+    
         if os.path.exists(filename):
             with open(filename, "a") as f:
                 f.write(invite)
