@@ -2,15 +2,18 @@
 
 from flask import Flask, render_template
 import json
+import os
 
 app = Flask(__name__)
 
 # static module for loading json file
 def read_file():
     filename = "items.json"
+    """
     with open(filename, "r") as f:
         data = json.load(f)
-    
+    return data.get('items', []) # Return empty list if 'items' key doesn't exist
+    """
     """
     if data:
         return data['items']  # return dict values (alist) of key items
@@ -18,7 +21,19 @@ def read_file():
         empty_data=[]
         return empty_data"
     """
-    return data.get('items', []) # Return empty list if 'items' key doesn't exist
+    # Check if file exists first
+    if not os.path.exists(filename):
+        return []
+    
+    try:
+        with open(filename, 'r') as f:
+            data = json.load(f)
+        return data.get('items', [])  # Return empty list if 'items' key doesn't exist
+    except json.JSONDecodeError:
+        return []  # Return empty list if JSON is invalid
+    except Exception as e:
+        print(f"Error loading items: {e}")
+        return []
 
 @app.route('/')
 def home():
