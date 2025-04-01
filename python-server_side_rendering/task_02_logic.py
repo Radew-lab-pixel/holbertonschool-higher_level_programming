@@ -10,12 +10,16 @@ def read_file():
     filename = "items.json"
     with open(filename, "r") as f:
         data = json.load(f)
+    
+    """
     if data:
         return data['items']  # return dict values (alist) of key items
     else:
         empty_data=[]
-        return empty_data
-    
+        return empty_data"
+    """
+    return data.get('items', []) # Return empty list if 'items' key doesn't exist
+
 @app.route('/')
 def home():
     return render_template('index.html')
