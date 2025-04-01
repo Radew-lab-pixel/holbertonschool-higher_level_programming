@@ -8,7 +8,8 @@
 <body>
     <h1> Products </h1>
     {% if error %}
-    <p>{{error}}</p>
+        <p>{{ error }}</p>
+    {% endif %}
     
     <table>
         <thead>
@@ -30,7 +31,6 @@
             {% endfor %}
         </tbody>
     </table>
-{% endif %}
 
 
 </body>
