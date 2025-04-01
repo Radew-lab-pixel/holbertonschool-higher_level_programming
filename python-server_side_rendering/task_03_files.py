@@ -130,7 +130,7 @@ def display_products():
         print(products)
         # data_source = 'CSV'
     else:
-        return render_template('product_display.html', error="Invalid source. Please use 'json' or 'csv'.")
+        return render_template('product_display.html', error="Wrong source")
     
     # Check if data was loaded successfully
     if products is None:
