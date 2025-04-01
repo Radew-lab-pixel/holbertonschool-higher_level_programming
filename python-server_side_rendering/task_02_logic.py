@@ -28,6 +28,8 @@ def contact():
 @app.route('/items')
 def items():
     items_list = read_file()
+    if items_list is None:
+        items_list = []
     return render_template('items.html', items=items_list)
 
 
