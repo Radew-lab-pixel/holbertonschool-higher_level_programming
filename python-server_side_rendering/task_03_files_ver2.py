@@ -94,28 +94,24 @@ def read_json_file():
         return json.load(f)
 """
 
+
 def read_csv_file():
     products = []
     filename = "products.csv"
     with open(filename, 'r') as f:
         reader = csv.DictReader(f, delimiter=',')
         # print(reader)
+        print(f"CSV fieldnames: {reader.fieldnames}")
         for row in reader:
             # row['id'] = int(row['id'])
-            # row['price'] = float(row['price'])
-            product = {
-                        'id': int(row['id']),
-                        'name': row['name'].strip(),
-                        'category': row['category'].strip(),
-                        'price': float(row['price'])
-                        }
-            
-            products.append(product)
+            #print(row['id'])
+            row['price'] = float(row['price'])
+            products.append(row)
     return products
 
 
 @app.route('/products')
-def display_products():
+def products():
     data_source = request.args.get('source', '').lower()
     product_id = request.args.get('id', None)
     
@@ -137,7 +133,7 @@ def display_products():
         return render_template('product_display.html', 
                              error=f"Error loading {data_source} data.")
  
-    return render_template('product_display.html',products=products)
+    return render_template('product_display.html', products=products)
     
     """
     # Handle empty results (valid for ID filtering)
