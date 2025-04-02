@@ -148,7 +148,8 @@ def filter_id(product_id, products):
 @app.route('/products')
 def display_products():
     data_source = request.args.get('source', '').lower()
-    product_id = request.args.get('id', None)
+    # product_id = request.args.get('id', None)
+    product_id = request.args.get('id', type=int)
     
     # Read data based on source
     if data_source == 'json':
@@ -163,6 +164,7 @@ def display_products():
     else:
         return render_template('product_display.html', error="Wrong source")
 
+    """
     if product_id:
         filter_id(product_id, products)
 
@@ -174,7 +176,17 @@ def display_products():
                              error=f"Error loading {data_source} data.")
 
     return render_template('product_display.html',products=products)
+    """
+ 
+
+    if product_id is not None:
+        products = [p for p in products if p['id'] == product_id]
+        if not products:
+            return render_template('product_display.html', error="Product not found")
     
+    return render_template('product_display.html', products=products)
+
+
     """
     # Handle empty results (valid for ID filtering)
     if not products:
