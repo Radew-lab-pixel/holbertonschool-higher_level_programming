@@ -114,14 +114,35 @@ def read_csv_file():
     return products
 
 def filter_id(product_id, products):
-    for product in products:
+    # for product in products:
         # print(f"row{product}")
-        if product['id'] == int(product_id):
+    #    if product['id'] == int(product_id):
             # return product
         # if product.id == int(product_id):
-            print(product)
+    #
+    # 
+    # filtered_products = [p for p in products if p['id'] == product_id]
+    """
+    for product in products:
+        # if (product["id"] == int(product_id)):
+        if product.get("id") == int(product_id):
+    # if filtered_products:
+    #    print(filtered_products)
+            print(product["name"])
             return render_template('product_display.html', products = product)
+    # print(product)
     return render_template('product_display.html', error = "Product not found")
+    """
+def filter_id(product_id, products):
+    try:
+        pid = int(product_id)
+        filtered = [p for p in products if p.get("id") == pid]
+        if filtered:
+            return render_template('product_display.html', product=filtered[0])
+    except ValueError:
+        pass
+    return render_template('product_display.html', error="Product not found")
+
 
 
 @app.route('/products')
@@ -132,12 +153,12 @@ def display_products():
     # Read data based on source
     if data_source == 'json':
         products = read_json_file()
-        print(products)
+        # print(products)
         # data_source = 'JSON'
     
     elif data_source == 'csv':
         products = read_csv_file()
-        print(products)
+        # print(products)
         # data_source = 'CSV'
     else:
         return render_template('product_display.html', error="Wrong source")
@@ -151,7 +172,7 @@ def display_products():
     if products is None:
         return render_template('product_display.html', 
                              error=f"Error loading {data_source} data.")
- 
+
     return render_template('product_display.html',products=products)
     
     """
