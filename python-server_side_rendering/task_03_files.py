@@ -113,6 +113,16 @@ def read_csv_file():
             products.append(product)
     return products
 
+def filter_id(product_id, products):
+    for product in products:
+        # print(f"row{product}")
+        if product['id'] == int(product_id):
+            # return product
+        # if product.id == int(product_id):
+            print(product)
+            return render_template('product_display.html', products = product)
+    return render_template('product_display.html', error = "Product not found")
+
 
 @app.route('/products')
 def display_products():
@@ -131,6 +141,11 @@ def display_products():
         # data_source = 'CSV'
     else:
         return render_template('product_display.html', error="Wrong source")
+
+    if product_id:
+        filter_id(product_id, products)
+
+
     
     # Check if data was loaded successfully
     if products is None:
