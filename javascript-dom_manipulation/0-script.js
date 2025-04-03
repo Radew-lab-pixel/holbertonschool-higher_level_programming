@@ -1,8 +1,8 @@
 function setHeaderColor() {
-    const urlParams = new URLSearchParams(window.location.search);
+    // const urlParams = new URLSearchParams(window.location.search);
     // const source = urlParams.get('source');
     // const header = document.getElementById('pageHeader');
-    const header = document.querySelector('header')  // using querySelctor
+    const header = document.querySelector('header');  // using querySelctor
     
     header.style.color = '#FF0000';  // For invalid/unknown sources
     }
