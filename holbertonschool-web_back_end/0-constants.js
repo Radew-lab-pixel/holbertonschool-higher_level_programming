@@ -17,7 +17,7 @@ export function getLast() {
   
 export function taskNext() {
     // avoid using var , use let if variable required changes
-    // var combination = 'But sometimes let';
+    // var  combination = 'But sometimes let';
     let combination = 'But sometimes let';
     combination += getLast();
   
